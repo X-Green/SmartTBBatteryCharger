@@ -93,7 +93,7 @@
 	(net 11 "+10V")
 	(net 12 "Net-(U1-FB)")
 	(net 13 "Net-(U4-PG10)")
-	(net 14 "Net-(D3-K)")
+	(net 14 "Net-(J1-Pin_2)")
 	(net 15 "Net-(C36-Pad2)")
 	(net 16 "ISENSE_CH1")
 	(net 17 "VSENSE_CH1")
@@ -309,7 +309,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/a97a2b56-5a4c-4130-9dc2-23d141c6ea7e")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -516,7 +516,7 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "01f6616e-c519-4820-bbab-ead6300c047d")
-		(at 210.090723 36.850378)
+		(at 321.840723 40.850378)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C34"
@@ -583,7 +583,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/190e9604-0073-43ed-b121-5e033bf2ecdc")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -702,7 +702,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.217391)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "5f21e006-4dbe-40d1-8195-ca290f4a4d99")
 		)
@@ -796,7 +796,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/82afd396-2b73-45c6-9a90-7e6cdb3ca85d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1070,7 +1070,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/bba49547-a34f-4d17-85c3-e0d43df069a1")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1358,7 +1358,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/6c108595-ebdd-410f-a0b6-578f69a3f8a2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1509,7 +1509,7 @@
 		(descr "D_SOD-123F")
 		(tags "D_SOD-123F")
 		(property "Reference" "D9"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c78b3fd9-9de6-417c-bb53-4b0f1ec1f7bc")
@@ -1521,7 +1521,7 @@
 			)
 		)
 		(property "Value" "K34"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "eec07ec7-d146-4ad4-a011-74eb736e613f")
 			(effects
@@ -1572,7 +1572,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/9d364d5a-ed12-4185-ade6-bfb9f9464377")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1756,7 +1756,7 @@
 			(uuid "95dea816-e5a7-4bcd-8558-c83a796ddf49")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.Fab")
 			(uuid "6218a6da-bd42-4d29-9f6d-6c38ef0b82b5")
 			(effects
@@ -1805,7 +1805,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R32"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dc8371e3-32f4-4679-89c5-dd96c06bee53")
@@ -1817,7 +1817,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "b3ae4ae9-1d86-4792-a9c9-cd080ebca717")
 			(effects
@@ -1868,7 +1868,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/63a51da4-6d11-40c1-9e37-0647e3b46dec")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1972,7 +1972,7 @@
 			(uuid "0b964bad-776a-4289-bb0f-3b80cbe3b2a2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4da143c9-aee7-4b09-ab26-ef7f6be3361c")
 			(effects
@@ -2019,7 +2019,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C64"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e1adc02a-e00a-4839-b386-b171ca4a0874")
@@ -2031,7 +2031,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "e7f6571b-61d7-4c2f-ac85-224d07cea66f")
 			(effects
@@ -2082,7 +2082,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c295fcd2-0c32-49e6-8ba2-56c668342486")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2186,7 +2186,7 @@
 			(uuid "c212a6fd-5a18-4c7b-9313-919102c415d6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "fe1cae04-226d-4771-90e8-f1ed1a13799d")
 			(effects
@@ -2233,7 +2233,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C71"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fa3a257b-70e6-4322-9d74-69d3d1ee1a8e")
@@ -2245,7 +2245,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(uuid "c8b7774a-6acb-458c-b1c5-5536b46f9ea8")
 			(effects
@@ -2296,7 +2296,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3579250c-4780-4390-ae1f-81066a599a9a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2400,7 +2400,7 @@
 			(uuid "8bd78e4a-6e58-4c22-867b-5554d0716051")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c7ad16b8-720f-45e4-a371-33345ec20459")
 			(effects
@@ -2447,7 +2447,7 @@
 		(descr "Inductor, Coilcraft, MSS1260-XXX, 12.0x12.0x6.0mm, (https://www.coilcraft.com/getmedia/febefb9b-60f9-4a2c-8525-9c396f34e363/mss1260.pdf), generated with kicad-footprint-generator gen_inductor.py")
 		(tags "Inductor mss")
 		(property "Reference" "L7"
-			(at 0 -7 360)
+			(at 0 -7 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b8c83d61-e53a-42e2-9653-0a10160c4d5e")
@@ -2459,7 +2459,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 0 7 360)
+			(at 0 7 0)
 			(layer "F.Fab")
 			(uuid "21fae951-f2aa-4199-a248-660e9d35a557")
 			(effects
@@ -2470,7 +2470,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Coilcraft_MSS1260-XXX"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cd08a627-af58-4e0a-ba14-b2af18ace934")
@@ -2482,7 +2482,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "579caabf-67ca-4b5e-9adb-bed3ef0ed060")
@@ -2494,7 +2494,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "acee0bf4-bb44-47d0-ac96-9c2e9a021ef1")
@@ -2507,7 +2507,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/39e001a9-9a74-43a4-913d-9cac07381d97")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2693,7 +2693,7 @@
 			(uuid "7f001d85-6769-4e3d-a609-98a3961d7b25")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "be0da3f8-4787-4073-b25f-c71c9ff26cb9")
 			(effects
@@ -2805,7 +2805,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/0433c37c-698f-4cd7-9583-b0940ca6e42c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3019,7 +3019,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ee293a2f-f12d-4ed4-a57f-335c87cfca83")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3232,7 +3232,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c462b862-c291-478b-8c27-c837b25fd496")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3446,7 +3446,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/2bfe4cc6-8901-495b-b8e2-e4d73b875f56")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3660,7 +3660,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/9bd3aa18-6ef9-4d76-a230-26010e74adcd")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3874,7 +3874,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9f2fd892-85c3-42be-9106-2023cb39742d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4043,7 +4043,7 @@
 	(footprint "Package_TO_SOT_SMD:TDSON-8-1"
 		(layer "F.Cu")
 		(uuid "1658760f-25df-4b28-b11b-a04aca1f4045")
-		(at 216.5 38.130663)
+		(at 328.25 42.130663)
 		(descr "Power MOSFET package, TDSON-8-1, 5.15x5.9mm (https://www.infineon.com/cms/en/product/packages/PG-TDSON/PG-TDSON-8-1/)")
 		(tags "tdson ")
 		(property "Reference" "Q1"
@@ -4110,7 +4110,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/b660ff31-999a-468e-9070-9ea157818861")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4416,7 +4416,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C65"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c7947ffd-5297-4e2e-8a14-809e6c7a53a9")
@@ -4428,7 +4428,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4a25fa97-f601-4f87-a5ec-d664ddddaaae")
 			(effects
@@ -4479,7 +4479,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/81669d5c-7365-4471-abf7-a1e553a68576")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4583,7 +4583,7 @@
 			(uuid "0b71c844-0709-46ae-a490-100111273eab")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9b69b8cf-574c-41ee-9d17-4ba367fa1d45")
 			(effects
@@ -4693,7 +4693,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/04c6e81a-8ce1-4541-815e-82bb3f5442b4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4844,7 +4844,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C20"
-			(at 1.25 -4.4 360)
+			(at 1.25 -4.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8d8c7197-cc6f-4785-8c9a-595f013056a2")
@@ -4856,7 +4856,7 @@
 			)
 		)
 		(property "Value" "C_Polarized"
-			(at 1.25 4.4 360)
+			(at 1.25 4.4 0)
 			(layer "F.Fab")
 			(uuid "537bcdde-c40c-4208-aa92-33a12be831dd")
 			(effects
@@ -4907,7 +4907,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/3dbb94e2-fc4a-475b-8856-0a83d9aebcf8")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6324,7 +6324,7 @@
 			(uuid "077ffd7a-8d4c-48ac-82db-af0da9eb597c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "2c2d8a98-1b29-41e7-b104-794c48be1dcb")
 			(effects
@@ -6436,7 +6436,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/bd835772-7c83-424d-96aa-634ff12408e6")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6650,7 +6650,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/69061bda-899a-4a26-8a91-4d9efa8ba4f3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6864,7 +6864,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f1dbeab0-ce98-4004-8055-630ac81b8c5a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7077,7 +7077,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f924f859-55cd-41d4-94c9-8ebae150ce02")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7291,7 +7291,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a9b7df72-4c49-4100-98bb-f77ba631bce3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7442,7 +7442,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R23"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4f12babc-35ed-4d92-a3a6-8826f14c0c41")
@@ -7454,7 +7454,7 @@
 			)
 		)
 		(property "Value" "33R"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "7c4a72a5-939e-464d-802a-537d05b97f31")
 			(effects
@@ -7505,7 +7505,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ea665827-72ac-44b0-8799-231d59bef414")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7609,7 +7609,7 @@
 			(uuid "1f21a9cc-0b55-463e-93cc-273904ab5a84")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "91f5aa80-06e6-4523-a28b-74a535bb6efb")
 			(effects
@@ -7719,7 +7719,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/cc363d13-efae-49c1-b64a-926a768f5502")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7933,7 +7933,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/2943ee4a-7677-4da6-96e7-878ca9d5d6cd")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8084,7 +8084,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C69"
-			(at 1.25 -4.4 360)
+			(at 1.25 -4.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "764158f3-11a3-43fc-b350-9f8a98cfa442")
@@ -8096,7 +8096,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 1.25 4.4 360)
+			(at 1.25 4.4 0)
 			(layer "F.Fab")
 			(uuid "1144f4f8-41e1-4968-92e1-6071ec51c424")
 			(effects
@@ -8147,7 +8147,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/b9d21cd8-cfb8-436d-b3b7-0514f21e6334")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9564,7 +9564,7 @@
 			(uuid "289991b3-75dc-4d68-8ca3-f78816f9f12c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "e9ef3a5a-2880-48a4-ac1b-174c043d95c8")
 			(effects
@@ -9675,7 +9675,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/d31eba11-ea56-41bb-938f-227de3a0cbcf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9888,7 +9888,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/38d8799c-4e89-4221-a1ed-37e490246b59")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10099,7 +10099,7 @@
 		(descr "Shunt Resistor SMD 2512 (6332 Metric), 2.6mm thick, Vishay WKS2512, Terminal length (T) 1.19mm, 5 to 200 milli Ohm (http://http://www.vishay.com/docs/30108/wsk.pdf)")
 		(tags "resistor shunt WSK2512")
 		(property "Reference" "R28"
-			(at 0 -2.65 360)
+			(at 0 -2.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "16c9ea8b-ea7b-49db-8b7c-ec88615a384e")
@@ -10111,7 +10111,7 @@
 			)
 		)
 		(property "Value" "4m"
-			(at 0 2.65 360)
+			(at 0 2.65 0)
 			(layer "F.Fab")
 			(uuid "560523a1-97af-46ca-8084-8d3d0636304c")
 			(effects
@@ -10162,7 +10162,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/e9b46ddf-8522-49c1-a932-dd6ab3f5e6cf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10346,7 +10346,7 @@
 			(uuid "48f56bc2-3049-46b7-96ad-696c5fa2e7cb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d8164a4b-f164-47f7-9ad8-37929a4504b1")
 			(effects
@@ -10477,7 +10477,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/e1d7844b-02ff-455d-babd-925414749bbf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10751,7 +10751,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ad5941e1-33d4-407e-a019-df5d52a2554e")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11072,7 +11072,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a7cccf26-460b-49e8-ac6c-ca2df4dc2de3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11223,7 +11223,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C86"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "31ec4152-8b93-4248-9e87-3e8991ca6476")
@@ -11235,7 +11235,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "698f7e58-aa65-429b-900f-91495cf5d37c")
 			(effects
@@ -11286,7 +11286,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7db493d7-6041-491a-851d-7cf10f2081fc")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11390,7 +11390,7 @@
 			(uuid "9832b70f-ee45-4817-b765-88b042132005")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "637454ed-ede7-4a26-bbaa-ecb57beda92d")
 			(effects
@@ -11500,7 +11500,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/0166d3ab-4c1f-4fbb-bc28-7760629cdb69")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11817,7 +11817,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/7f31d93d-3978-4510-a38c-39d35564089b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12050,7 +12050,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R22"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9af1a8bb-7264-4e9e-9a44-f5ac3fecf63e")
@@ -12062,7 +12062,7 @@
 			)
 		)
 		(property "Value" "33R"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "5f64a8a0-d6ff-4ed7-af45-c4877f5cb6c3")
 			(effects
@@ -12113,7 +12113,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/583b0277-9ee2-4ea2-a084-2d33c77f0b18")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12217,7 +12217,7 @@
 			(uuid "16f82121-e2a4-4cd4-87af-0a58b8415609")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1ee37fa5-f7b4-4ca7-adf9-d92e9d9b9d26")
 			(effects
@@ -12264,7 +12264,7 @@
 		(descr "PowerDI,Diode,Vishay,https://www.diodes.com/assets/Package-Files/PowerDI5.pdf")
 		(tags "PowerDI diode vishay")
 		(property "Reference" "D12"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cb1c06b5-1f7b-47c5-ba9c-ccd076b512e2")
@@ -12276,7 +12276,7 @@
 			)
 		)
 		(property "Value" "SB1045"
-			(at 0 3 360)
+			(at 0 3 0)
 			(layer "F.Fab")
 			(uuid "2c7060cf-1422-439c-bc38-7b7481fc956c")
 			(effects
@@ -12327,7 +12327,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/b05b7f2d-0c17-4bd1-977f-f26944036e47")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12511,7 +12511,7 @@
 			(uuid "6afa3b1d-63c4-4e81-a253-6d07a155785b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.Fab")
 			(uuid "e2b066d9-487a-44b2-b18e-38d8b28b6cb4")
 			(effects
@@ -12630,7 +12630,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a75988b7-ab74-45fa-a98b-adae78d050c3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12844,7 +12844,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/85bae878-ae5b-4989-a439-b95fe44a59b3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12991,7 +12991,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2e9187c9-6b43-4a20-8a53-2890151f1d69")
-		(at 198.725 33)
+		(at 310.475 37)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C39"
@@ -13058,7 +13058,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/2e91b488-127e-4dd4-b4d7-b38b2a9c61e1")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13209,7 +13209,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C77"
-			(at 1.25 -4.4 360)
+			(at 1.25 -4.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ec970e6a-aff7-47c0-9904-7ededeed783f")
@@ -13221,7 +13221,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 1.25 4.4 360)
+			(at 1.25 4.4 0)
 			(layer "F.Fab")
 			(uuid "785c16a8-3cd9-441a-8f16-5974f90c3db1")
 			(effects
@@ -13272,7 +13272,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/22164706-7298-4802-b857-9e53967ccf3e")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14689,7 +14689,7 @@
 			(uuid "1493eab7-36b9-4763-ab70-b8b9d1df91d5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "3979f051-d334-4c1c-aa3e-1d8ac6d8126b")
 			(effects
@@ -14801,7 +14801,7 @@
 		)
 		(property ki_fp_filters "D*SMF*")
 		(path "/12bd4f40-0b8a-4356-848c-c3fb352a18f5")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15086,7 +15086,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/093f6f15-e0eb-452f-912a-6755dcd8a5c9")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15357,7 +15357,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/50ee77b0-062b-484a-bed4-35b08b6b8e95")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15655,7 +15655,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/121ebfee-52bd-4d1c-8e43-7bf3d46cb925")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15869,7 +15869,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/6617de5d-3b17-4b52-8786-f3a2a6d82453")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16094,7 +16094,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R33"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9d713fe0-946f-4aaa-9e85-f44a6d03d04a")
@@ -16106,7 +16106,7 @@
 			)
 		)
 		(property "Value" "90k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a54d4c5c-d3e2-477a-9351-7f978d08857c")
 			(effects
@@ -16157,7 +16157,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/fa377730-7425-4024-ab99-fb79584a680d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16261,7 +16261,7 @@
 			(uuid "7a8ad3ce-52c6-4f70-b0bf-e705060992bc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b1fa64f7-9016-434b-820a-9dfff8d159e8")
 			(effects
@@ -16308,7 +16308,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R21"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5ba351d9-398b-439a-a260-3d6efa59b806")
@@ -16320,7 +16320,7 @@
 			)
 		)
 		(property "Value" "33R"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "d17fc06c-efb7-4ed3-85c4-fa103fdef2e3")
 			(effects
@@ -16371,7 +16371,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/0e758362-5d99-4c33-a135-dcb9c34faf35")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16475,7 +16475,7 @@
 			(uuid "5a807999-2eb5-4fb6-a553-f7c4045e507d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e3c7844a-69a6-44cc-a165-ac232d43c974")
 			(effects
@@ -16584,7 +16584,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/840b771c-f2ce-47b1-9cbe-bc40762b1b76")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16798,7 +16798,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/79541e61-3e4d-4f7d-8d2f-7ee204ee2be0")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -17097,7 +17097,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/331df39f-cacc-48c1-aa15-2d64a0e4f6e0")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd dnp)
 		(fp_line
@@ -17311,7 +17311,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/9b15f858-23c4-4ad0-9cbf-723067987d36")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17458,7 +17458,7 @@
 	(footprint "Fuse:Fuse_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "3c538c98-33da-4821-ae6e-a61c5002c199")
-		(at 231.5 31.8 180)
+		(at 343.25 35.8 180)
 		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "fuse")
 		(property "Reference" "F1"
@@ -17525,7 +17525,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/3092cb70-fd33-44d5-af0c-e72551ae2963")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17739,7 +17739,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8ff06eb4-8efa-4d68-ba17-8ebfb5666a26")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17886,7 +17886,7 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "3c8c6154-62df-425a-b4c8-3877b1195aed")
-		(at 210.63256 43.403705 -90)
+		(at 322.38256 47.403705 -90)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C33"
@@ -17953,7 +17953,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/dbf26bf6-eca9-43e8-94a5-8b98a23e92c3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18072,7 +18072,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.217391)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "8ff768ca-cdc9-4c79-b1da-62bfd599234d")
 		)
@@ -18100,7 +18100,7 @@
 	(footprint "Inductor_SMD:L_Coilcraft_MSS1260-XXX"
 		(layer "F.Cu")
 		(uuid "3d7c6e7b-3684-4c00-bfd8-932df87b838a")
-		(at 226.725322 39.570805)
+		(at 338.475322 43.570805)
 		(descr "Inductor, Coilcraft, MSS1260-XXX, 12.0x12.0x6.0mm, (https://www.coilcraft.com/getmedia/febefb9b-60f9-4a2c-8525-9c396f34e363/mss1260.pdf), generated with kicad-footprint-generator gen_inductor.py")
 		(tags "Inductor mss")
 		(property "Reference" "L3"
@@ -18164,7 +18164,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/2d33af34-97ab-45ec-8868-4523640531da")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18399,7 +18399,7 @@
 		(descr "Shunt Resistor SMD 2512 (6332 Metric), 2.6mm thick, Vishay WKS2512, Terminal length (T) 1.19mm, 5 to 200 milli Ohm (http://http://www.vishay.com/docs/30108/wsk.pdf)")
 		(tags "resistor shunt WSK2512")
 		(property "Reference" "R18"
-			(at 0 -2.65 360)
+			(at 0 -2.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ffdc0cd6-276d-4e32-bdea-0e2dcf932c92")
@@ -18411,7 +18411,7 @@
 			)
 		)
 		(property "Value" "4m"
-			(at 0 2.65 360)
+			(at 0 2.65 0)
 			(layer "F.Fab")
 			(uuid "df7d9d2e-c535-423a-88e6-d4f16f3a5cc9")
 			(effects
@@ -18462,7 +18462,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/09c83150-8d08-49fd-b945-915c6455238b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18646,7 +18646,7 @@
 			(uuid "42ec7c4f-aa4e-4cb7-86a4-643d79d90735")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "226c0066-0f8e-4086-968f-0e7e38478553")
 			(effects
@@ -18778,7 +18778,7 @@
 		)
 		(property ki_fp_filters "*polyfuse* *PTC*")
 		(path "/84278383-93a7-4d0d-a664-8d2dc5cb9e3f")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18991,7 +18991,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/95df9d89-e9f1-40b7-be6a-ea973cfdcf19")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19205,7 +19205,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/6271ff17-31ee-4f87-87c1-196f97e70f51")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19419,7 +19419,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/f2da3499-698d-4535-8d89-687b5965ab2a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19633,7 +19633,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/8410f6c8-59d9-426d-ac2f-39a76e2d74e0")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19847,7 +19847,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c32f9443-7fa7-4816-bb36-18a5624cc47c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20061,7 +20061,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a6ae0253-f933-43a1-82cd-9f40701000aa")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20208,7 +20208,7 @@
 	(footprint "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 		(layer "F.Cu")
 		(uuid "4f530a1f-d7a8-4a3e-a18c-cd2e07662227")
-		(at 236.5 43.775001 180)
+		(at 349 58.025001 180)
 		(descr "2.0mm x 2.0mm Addressable RGB LED NeoPixel Nano, 12 mA, https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf")
 		(tags "LED RGB NeoPixel Nano PLCC-4 2020")
 		(property "Reference" "D18"
@@ -20275,7 +20275,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/b42c6d08-267b-4107-8b8d-d11689487785")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20484,7 +20484,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "4f9c885b-aaf1-498a-a662-959abd899bfb")
-		(at 239 44 -90)
+		(at 351.5 58.25 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C93"
@@ -20551,7 +20551,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f0617519-4ea2-4980-8816-bdaa6b2d99d2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20764,7 +20764,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/541b6398-6142-4ff2-8ef4-bc22cfc8c3fe")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20971,7 +20971,7 @@
 	(footprint "Diode_SMD:D_SOD-123F"
 		(layer "F.Cu")
 		(uuid "5215ea8a-9856-43e4-ae53-c7e1c7aa1c91")
-		(at 206.195 41.425)
+		(at 317.945 45.425)
 		(descr "D_SOD-123F")
 		(tags "D_SOD-123F")
 		(property "Reference" "D4"
@@ -21038,7 +21038,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/5599ae3e-e101-4ef8-b182-84fd686bd004")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21334,7 +21334,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c3932b08-53c2-4457-9060-18b197706c89")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21548,7 +21548,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8d843675-8e40-463d-b989-3726d0d8448a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21762,7 +21762,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7a0ec3ec-ab34-4a47-ae24-eea9610e9c7b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21976,7 +21976,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??-1MP*")
 		(path "/7d430b87-8c1f-4af1-aafd-622e433a48f7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22432,7 +22432,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7f0a926e-bb63-4912-b585-96ff15e8dacc")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22646,7 +22646,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/1e18eaef-4ae6-46f0-9adb-1893ced058bf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22793,7 +22793,7 @@
 	(footprint "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
 		(layer "F.Cu")
 		(uuid "5581ed90-905b-4124-9da4-8cce7ee586e5")
-		(at 206.974025 30 180)
+		(at 318.724025 34 180)
 		(descr "Shunt Resistor SMD 2512 (6332 Metric), 2.6mm thick, Vishay WKS2512, Terminal length (T) 1.19mm, 5 to 200 milli Ohm (http://http://www.vishay.com/docs/30108/wsk.pdf)")
 		(tags "resistor shunt WSK2512")
 		(property "Reference" "R5"
@@ -22861,7 +22861,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/bc254c94-96e4-404f-90fe-c6ab4e538434")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -23061,7 +23061,7 @@
 			(size 2.29 2.03)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.12)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "c4cd2642-9cea-4f9a-9f18-78e09f7c5981")
@@ -23071,7 +23071,7 @@
 			(size 1.4 0.76)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.12)
-			(net 71 "Net-(U5-+)")
+			(net 70 "Net-(U5--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "89de62c3-7eee-46e2-bf81-798fa3f0ac0c")
@@ -23081,7 +23081,7 @@
 			(size 1.4 0.76)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 70 "Net-(U5--)")
+			(net 71 "Net-(U5-+)")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "a1ca0b00-c130-4aad-9ea1-1247c77325ca")
@@ -23091,7 +23091,7 @@
 			(size 2.29 2.03)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.12)
-			(net 2 "VPP")
+			(net 14 "Net-(J1-Pin_2)")
 			(pinfunction "4")
 			(pintype "passive")
 			(uuid "7df21be9-e3cb-49b7-b2ce-68ba33c2bc17")
@@ -23111,7 +23111,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "55821843-458b-4907-b94c-9a454f550d98")
-		(at 222.985484 28.626814 -90)
+		(at 334.735484 32.626814 -90)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C36"
@@ -23178,7 +23178,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/54c6f60f-3c8d-4d9b-96bf-b338f5e16360")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -24611,7 +24611,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "5d2a2bd5-eba1-4dfe-829c-d04d6e3f1683")
 		)
@@ -24644,7 +24644,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R35"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "312cf315-1f75-441a-9d00-7647403559af")
@@ -24656,7 +24656,7 @@
 			)
 		)
 		(property "Value" "90k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4d47580a-0922-4c23-a84b-b5774016d335")
 			(effects
@@ -24707,7 +24707,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/495bc482-d91f-46cd-af65-069b415563ce")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -24811,7 +24811,7 @@
 			(uuid "222964e2-cfc0-469a-820b-9ffeb2f3f4e2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c767e7ba-e27a-4eea-8065-74b7156c0335")
 			(effects
@@ -24921,7 +24921,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/d1a26b4b-7fd3-4e0d-a07c-1fb393ae398b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25135,7 +25135,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/6d4b515b-6f6f-48e8-9089-a29284366fb9")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25349,7 +25349,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f4d67be3-ad54-42dd-84dd-669ea083ce16")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25562,7 +25562,7 @@
 			)
 		)
 		(path "/d9ca3b63-80c4-4040-828b-b5775e30a280")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25850,7 +25850,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7665a0d7-92de-456a-a870-a4ed07d40bdf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26001,7 +26001,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C84"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3fdca447-bd1f-449b-b6e8-01a24a2558bb")
@@ -26013,7 +26013,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "8ec3ea40-ff19-4063-9dc4-e7ce5f488b78")
 			(effects
@@ -26064,7 +26064,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/560ddb3b-3939-451e-9290-70d84faf0f37")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26168,7 +26168,7 @@
 			(uuid "59b80099-97dd-41ca-b9b5-7e7abc5366ad")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "807dda27-f85d-44c0-b33e-401c78b47239")
 			(effects
@@ -26215,7 +26215,7 @@
 		(descr "PowerDI,Diode,Vishay,https://www.diodes.com/assets/Package-Files/PowerDI5.pdf")
 		(tags "PowerDI diode vishay")
 		(property "Reference" "D14"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "20c93bf9-b3f4-4dbd-b4d6-0df5b1103b5b")
@@ -26227,7 +26227,7 @@
 			)
 		)
 		(property "Value" "SB1045"
-			(at 0 3 360)
+			(at 0 3 0)
 			(layer "F.Fab")
 			(uuid "6b05c207-f27b-4229-9377-4ce9b9fccbed")
 			(effects
@@ -26278,7 +26278,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/80c776aa-67e3-47eb-b7cb-a4714352bce8")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26462,7 +26462,7 @@
 			(uuid "80fe3938-6977-4f98-9c9b-9830fce3f0f3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.Fab")
 			(uuid "3b5a73e8-edbe-47a8-9810-96f00e7c1da6")
 			(effects
@@ -26581,7 +26581,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/5f4691fd-2511-46e2-95ca-cd65718b6d23")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26795,7 +26795,7 @@
 		)
 		(property ki_fp_filters "D*SMF*")
 		(path "/d49b843f-5fb6-46ac-b40a-b05ffe4399fa")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -27081,7 +27081,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/59a7932e-4280-4400-a603-d4e3381e1db4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -27295,7 +27295,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/644ff499-5d42-41d9-8499-cf6d4823e624")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -28824,7 +28824,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a9f9d341-def0-48e4-98a8-0244cf5088ec")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -28975,7 +28975,7 @@
 		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "fuse")
 		(property "Reference" "F5"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f211cb0b-b320-4d90-a11b-f6b136c141e3")
@@ -28987,7 +28987,7 @@
 			)
 		)
 		(property "Value" "8A"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "42b98048-79cf-4cb5-862f-70d4f3e23570")
 			(effects
@@ -29038,7 +29038,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/fea0f21d-3f53-427e-aaee-2b2e979ecf2d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -29142,7 +29142,7 @@
 			(uuid "167a832c-ec87-4cc7-917c-3ef2e779d217")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7ccd1466-de02-463d-bf83-42474e52af33")
 			(effects
@@ -29252,7 +29252,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ca42353e-1b0b-4e09-b7c1-2511cd32678a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -29466,7 +29466,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/f90a9667-956b-47b8-9e68-1d4f245c99d7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -30995,7 +30995,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/9a179343-35c5-4b49-bd84-b4b7a2c69469")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -31209,7 +31209,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/9e65a773-dc2c-4d1d-a618-b0c0b9f12ea2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -31422,7 +31422,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/746e3ea7-d29b-4fc9-bba0-27fe5c3dbe23")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -31636,7 +31636,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/30d7cfe5-3fd9-4e28-829e-d11de342b822")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -31850,7 +31850,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/616ecdfd-5dc1-4418-bc06-a5c1618c187e")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -31997,7 +31997,7 @@
 	(footprint "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "6f1a1532-c09f-4ecc-9b6e-fad5c5f51131")
-		(at 206 36.028631 -90)
+		(at 317.75 40.028631 -90)
 		(descr "TSSOP, 8 Pin (JEDEC MO-153 Var AA https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSSOP SO")
 		(property "Reference" "U5"
@@ -32064,7 +32064,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/356af425-e84a-4c57-be1a-e74c4776c9e2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -32318,7 +32318,7 @@
 		(descr "Power MOSFET package, TDSON-8-1, 5.15x5.9mm (https://www.infineon.com/cms/en/product/packages/PG-TDSON/PG-TDSON-8-1/)")
 		(tags "tdson ")
 		(property "Reference" "Q4"
-			(at 0 -3.5 360)
+			(at 0 -3.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4e760498-389f-467a-89cb-986beeca45aa")
@@ -32330,7 +32330,7 @@
 			)
 		)
 		(property "Value" "BSC070N10NS5"
-			(at 0 3.5 360)
+			(at 0 3.5 0)
 			(layer "F.Fab")
 			(uuid "e7ccf394-8fef-4661-8a1d-5d229883aaef")
 			(effects
@@ -32381,7 +32381,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/c6b40ad5-a38c-4c6f-a2f7-2cb5baa57245")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -32507,7 +32507,7 @@
 			(uuid "5fcc05d3-64f1-4191-935a-ecf8a1365f81")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8ae655f4-b366-4bfd-a53c-6c482df8fc1d")
 			(effects
@@ -32683,7 +32683,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "73025281-5b08-41af-8646-d5ecb198f9ef")
-		(at 201.695 43.425 -90)
+		(at 313.445 47.425 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C22"
@@ -32750,7 +32750,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8c3ab8a9-97a3-428d-ab4e-44ce217c6407")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -32901,7 +32901,7 @@
 		(descr "Power MOSFET package, TDSON-8-1, 5.15x5.9mm (https://www.infineon.com/cms/en/product/packages/PG-TDSON/PG-TDSON-8-1/)")
 		(tags "tdson ")
 		(property "Reference" "Q6"
-			(at 0 -3.5 360)
+			(at 0 -3.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e5ed831f-00e9-484e-ae41-d67b17e00ad3")
@@ -32913,7 +32913,7 @@
 			)
 		)
 		(property "Value" "BSC070N10NS5"
-			(at 0 3.5 360)
+			(at 0 3.5 0)
 			(layer "F.Fab")
 			(uuid "fb87d24b-8b10-4255-99cc-baa9abdedb72")
 			(effects
@@ -32964,7 +32964,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/19aba2c5-4869-418d-9834-2e8fe49e53cf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -33090,7 +33090,7 @@
 			(uuid "fabfa093-8c7e-47b8-b653-49b4b275ecb3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "0ccbc1df-3475-480a-883b-e2797bf1aaa5")
 			(effects
@@ -33333,7 +33333,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8c02aa18-7da8-46b0-85dc-9379f19a5575")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -33484,7 +33484,7 @@
 		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "fuse")
 		(property "Reference" "F4"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6e918f8a-9c92-4c65-907e-f144f3c826e0")
@@ -33496,7 +33496,7 @@
 			)
 		)
 		(property "Value" "8A"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "bc7d03af-e63c-43b9-8721-b039ca5263ac")
 			(effects
@@ -33547,7 +33547,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/e7d9acb4-0146-472e-9e5d-4bc29aeb2979")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -33651,7 +33651,7 @@
 			(uuid "e5dcaffb-bb6d-4dbb-a6bb-0c336f3b6619")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "633683a6-2eb4-449f-80ab-18e9639b4721")
 			(effects
@@ -33698,7 +33698,7 @@
 		(descr "Power MOSFET package, TDSON-8-1, 5.15x5.9mm (https://www.infineon.com/cms/en/product/packages/PG-TDSON/PG-TDSON-8-1/)")
 		(tags "tdson ")
 		(property "Reference" "Q5"
-			(at 0 -3.5 360)
+			(at 0 -3.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7ed2fb06-6438-47c2-b6d8-bd9e6efc6401")
@@ -33710,7 +33710,7 @@
 			)
 		)
 		(property "Value" "BSC070N10NS5"
-			(at 0 3.5 360)
+			(at 0 3.5 0)
 			(layer "F.Fab")
 			(uuid "a6e8a110-68d8-4b59-871d-1812672f0d09")
 			(effects
@@ -33761,7 +33761,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/d9716754-9f86-44c0-8871-8e77761264a5")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -33887,7 +33887,7 @@
 			(uuid "db486ba4-763c-4d43-bc1b-5f218c24e151")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "bf87b9e0-20aa-43c6-9b1b-aae73eef22ee")
 			(effects
@@ -34129,7 +34129,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/e0c1393d-359c-4aa8-9931-090f38e86ff8")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -34343,7 +34343,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/c4728780-eec6-4888-8dce-11cc3be2d7e7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -35805,7 +35805,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
 		(uuid "7bd795a6-ee95-4c57-8f15-b859fbd436e2")
-		(at 204.5 44.5)
+		(at 316.25 48.5)
 		(descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U6"
@@ -35872,7 +35872,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/a2915e70-8f38-409b-8a47-c0faf1285f87")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -36093,7 +36093,7 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "7c2559c9-a6ea-43b2-bbc3-0e72a4e7a4dc")
-		(at 228 30.8 -90)
+		(at 339.75 34.8 -90)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C37"
@@ -36160,7 +36160,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3b779264-08d0-45dc-91f4-96d4006f36cf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -36279,7 +36279,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.217391)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "dc2e88f7-149a-4fbc-929c-c2da66295e8c")
 		)
@@ -36374,7 +36374,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/4533efd7-5a77-40be-9f0c-2b1ce8fb6667")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -36588,7 +36588,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/1a47c570-124b-4333-8e28-853aee64b12a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -36802,7 +36802,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/b2a01292-7b24-4499-9b25-4da55e9d0747")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -37015,7 +37015,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/91ace425-bc65-473b-a6bd-fdbcd49e11cd")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -37289,7 +37289,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/20cd61f4-5a46-4b93-ad9b-24521bd97aa3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -37503,7 +37503,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/86faf6ce-2c79-40c8-b488-5a6fe8c638cf")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -39032,7 +39032,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/620f271f-735a-403b-887e-a8f7e209a1c2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -39246,7 +39246,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/06ebcdda-bb7a-42bf-821a-908cddaf9b84")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -39542,7 +39542,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/d11dbf4c-a94c-4635-9c95-9232304500e2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -39845,7 +39845,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c3136adc-f2af-461d-a809-1d20027a72d7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -40059,7 +40059,7 @@
 		)
 		(property ki_fp_filters "LQFP*10x10mm*P0.5mm*")
 		(path "/162ee42b-15b2-41f1-88d2-0dfeaac49793")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -41114,7 +41114,7 @@
 		(descr "Shunt Resistor SMD 2512 (6332 Metric), 2.6mm thick, Vishay WKS2512, Terminal length (T) 1.19mm, 5 to 200 milli Ohm (http://http://www.vishay.com/docs/30108/wsk.pdf)")
 		(tags "resistor shunt WSK2512")
 		(property "Reference" "R29"
-			(at 0 -2.65 360)
+			(at 0 -2.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "779dd2d7-0e54-4231-a86e-1a4a212d8bea")
@@ -41126,7 +41126,7 @@
 			)
 		)
 		(property "Value" "4m"
-			(at 0 2.65 360)
+			(at 0 2.65 0)
 			(layer "F.Fab")
 			(uuid "f9ffd348-58b3-482d-b09f-23bb94f8b62d")
 			(effects
@@ -41177,7 +41177,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/02246046-f36a-4f14-aea3-b0d9ecd82f16")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -41361,7 +41361,7 @@
 			(uuid "9aaa4c1c-d4ae-41e2-bdfb-e4aaeedc3daf")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "45b6582d-d6ba-4292-b650-db9b06989890")
 			(effects
@@ -41426,7 +41426,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "8906fbea-3425-4d89-ad56-8f6586cfc4c1")
-		(at 211.699732 39.546335 90)
+		(at 323.449732 43.546335 90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C32"
@@ -41493,7 +41493,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a7f0deb5-d499-4cfc-84e3-c58e7da92b85")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -41612,7 +41612,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "95a86968-b618-40df-b22f-401e0120c008")
 		)
@@ -41706,7 +41706,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/4620db4f-9cf9-4f89-a1c0-8171da6ed19f")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -41980,7 +41980,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/cb95b531-4ca7-4d9d-aa2d-314dffc1f48c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -42194,7 +42194,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c4aedbae-a7ab-439d-b2af-0bd1cd2abcfb")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -42408,7 +42408,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/4afe370e-1217-48db-9590-ed8bf57782d4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -42555,7 +42555,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "8ef3e9b1-6938-429c-aba4-2a0f35cdb454")
-		(at 203.5 38.028632 90)
+		(at 315.25 42.028632 90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C31"
@@ -42622,7 +42622,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c31a1b37-cc5d-4bdd-b7c4-9a0ed6a70f83")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -42836,7 +42836,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/40d0678b-6157-4fb6-9323-20e883f4a943")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -42987,7 +42987,7 @@
 		(descr "D_SOD-123F")
 		(tags "D_SOD-123F")
 		(property "Reference" "D10"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3c83af23-3692-450b-abf2-edf9350baf53")
@@ -42999,7 +42999,7 @@
 			)
 		)
 		(property "Value" "K34"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "d851092f-f395-496f-882f-5a488ef8f491")
 			(effects
@@ -43050,7 +43050,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/1f084fe6-4fd1-473d-a9ef-38cc907c8fa1")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -43234,7 +43234,7 @@
 			(uuid "e7f5dddf-fd14-4c21-b5a1-198c73044706")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.Fab")
 			(uuid "2101875e-4ed8-4b20-8dae-16eb435c33bd")
 			(effects
@@ -43283,7 +43283,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R34"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7eb71e1d-5f6c-4b84-82c4-63e6158cde65")
@@ -43295,7 +43295,7 @@
 			)
 		)
 		(property "Value" "90k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "7d69e153-3d03-4911-81f2-7371d0ea7b9f")
 			(effects
@@ -43346,7 +43346,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b15433d1-80da-4891-8e5b-b6499fa8053b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -43450,7 +43450,7 @@
 			(uuid "4f513553-4661-415d-a792-5fca94458aa0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "3d87a20a-8e60-44db-90aa-47c60819bfed")
 			(effects
@@ -43560,7 +43560,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/bba8127c-4805-41c2-9b84-e33e0e4248fd")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -43877,7 +43877,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a5cf3c8b-ce51-4377-9c8f-9dc9bee57b02")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -44091,7 +44091,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/36f55af2-c92f-4727-9521-db3ad10d4f25")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -44390,7 +44390,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/1b87c149-b8ba-4f3f-8cf7-03b9007e1109")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -44644,7 +44644,7 @@
 		(descr "SOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U3"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4ab943b9-d181-4820-af99-bf8f482b000f")
@@ -44656,7 +44656,7 @@
 			)
 		)
 		(property "Value" "RY8411"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "6f38e2bb-7908-4cc6-a2c3-7afe060b3274")
 			(effects
@@ -44706,7 +44706,7 @@
 			)
 		)
 		(path "/b130f2a3-7c20-4643-94ad-001a5a887f0d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -44852,7 +44852,7 @@
 			(uuid "33f0341f-d1b9-4c2f-8b7b-6512173fa1e2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "10bd2c38-1912-4cb0-b5b4-2615448b33d0")
 			(effects
@@ -44937,7 +44937,7 @@
 	(footprint "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 		(layer "F.Cu")
 		(uuid "9b14ce44-b45e-4fbc-b519-738b06cdd54e")
-		(at 241.5 43.775001 180)
+		(at 354 58.025001 180)
 		(descr "2.0mm x 2.0mm Addressable RGB LED NeoPixel Nano, 12 mA, https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf")
 		(tags "LED RGB NeoPixel Nano PLCC-4 2020")
 		(property "Reference" "D19"
@@ -45004,7 +45004,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/35755431-8982-4395-b4f4-ea499a15de03")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -45213,7 +45213,7 @@
 	(footprint "Diode_SMD:D_PowerDI-5"
 		(layer "F.Cu")
 		(uuid "9d5f94b3-c532-43e4-9e70-764d99dd8724")
-		(at 216.138 43.42)
+		(at 327.888 47.42)
 		(descr "PowerDI,Diode,Vishay,https://www.diodes.com/assets/Package-Files/PowerDI5.pdf")
 		(tags "PowerDI diode vishay")
 		(property "Reference" "D3"
@@ -45280,7 +45280,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/cc9dfd33-6313-46ab-a6b7-0167dd852c02")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -45478,7 +45478,7 @@
 			(at -1.120001 0 180)
 			(size 4.86 3.36)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "6169f1f7-3d40-4086-b7f9-644dd3de1ec1")
@@ -45516,7 +45516,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "9f575049-ba53-4aec-89ba-6811ae9c62f4")
-		(at 214.017352 31.860663)
+		(at 325.767352 35.860663)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C35"
@@ -45583,7 +45583,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/e95b465a-e43e-4c23-bf81-48ac733594d4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -47016,7 +47016,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Net-(D3-K)")
+			(net 2 "VPP")
 			(pintype "passive")
 			(uuid "5e5ef9ab-2797-411b-a304-25e7cd77cded")
 		)
@@ -47049,7 +47049,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R31"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c6a1cfcd-8a34-4b5f-8b1a-65e031a8654a")
@@ -47061,7 +47061,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a5c8303a-de02-4737-8b8e-17b2f1d24c24")
 			(effects
@@ -47112,7 +47112,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7ee15dcd-90b0-41a1-815c-0407f4dd836f")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -47216,7 +47216,7 @@
 			(uuid "91358942-038b-4a95-bb35-46e53b591ac1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d735c848-b9c8-4882-bd01-84fdaddf79af")
 			(effects
@@ -47326,7 +47326,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/e2446ef4-cde5-4a84-82ab-5dc3b1d00602")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -47540,7 +47540,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a2e47827-3b0a-4bd0-945e-bdaa55a0a92e")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -47691,7 +47691,7 @@
 		(descr "Shunt Resistor SMD 2512 (6332 Metric), 2.6mm thick, Vishay WKS2512, Terminal length (T) 1.19mm, 5 to 200 milli Ohm (http://http://www.vishay.com/docs/30108/wsk.pdf)")
 		(tags "resistor shunt WSK2512")
 		(property "Reference" "R27"
-			(at 0 -2.65 360)
+			(at 0 -2.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "89119868-f5bb-423d-97ca-1b35cbb64a94")
@@ -47703,7 +47703,7 @@
 			)
 		)
 		(property "Value" "4m"
-			(at 0 2.65 360)
+			(at 0 2.65 0)
 			(layer "F.Fab")
 			(uuid "8e204786-6492-477d-950d-31564cf87dc0")
 			(effects
@@ -47754,7 +47754,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/977da177-6bbb-4578-bb9d-5bf08888b264")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -47938,7 +47938,7 @@
 			(uuid "0a1d5f4e-cb9b-4d2e-8915-2a27a202d700")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "74f0af59-e880-434a-a89a-40f53446b0f9")
 			(effects
@@ -48070,7 +48070,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/0db4483a-21ae-4b06-8c4f-61118a52597c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -49536,7 +49536,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C85"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1bf7613c-2f0a-425b-aba9-41c2edf5e793")
@@ -49548,7 +49548,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "c5b11ea2-481b-4add-8417-f06ed30bdc4b")
 			(effects
@@ -49599,7 +49599,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/72002203-0ae5-4e92-a358-183a8cfd8386")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -49703,7 +49703,7 @@
 			(uuid "666339c8-26e1-48ea-bb4a-5babd3b37229")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "add933d9-25be-4e9c-8c4d-088093824171")
 			(effects
@@ -49813,7 +49813,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/88faf5b9-ee34-4dcb-90d4-3ecfc0015761")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -50049,7 +50049,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R30"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3aeeb500-2b32-4c8d-ad77-9649c4041603")
@@ -50061,7 +50061,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "682e4fd9-ca55-4cdc-85d5-ec1bf9a9e0ef")
 			(effects
@@ -50112,7 +50112,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/be545d5a-e841-4f31-85c1-f46e8d704081")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -50216,7 +50216,7 @@
 			(uuid "db1631f5-7127-4950-937b-7291c677ca8b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "11f77fa1-5fb4-499f-bf4b-455af6bb8354")
 			(effects
@@ -50325,7 +50325,7 @@
 			)
 		)
 		(path "/75805758-76be-4fa8-b36a-4eef59428603")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -50560,7 +50560,7 @@
 		(descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U13"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cce50c95-174e-4627-8490-2b093db57426")
@@ -50572,7 +50572,7 @@
 			)
 		)
 		(property "Value" "UCC27517"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "7bd9c427-9b1b-4bff-9110-fcf49609971b")
 			(effects
@@ -50623,7 +50623,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/56b45768-3de8-4c00-a1f3-3d30d3cc2a92")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -50769,7 +50769,7 @@
 			(uuid "c26f8e3a-34a4-453f-84ef-16a392ba931c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "36227e18-d148-44d7-ba9e-387157b02e57")
 			(effects
@@ -50911,7 +50911,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/82718216-3c74-4575-b06d-c7df587edfea")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -51125,7 +51125,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/fb4fb1d3-e9de-4464-b386-376dbbf29ef5")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -51361,7 +51361,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C79"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7e0f832a-344b-4011-8621-02e70980c042")
@@ -51373,7 +51373,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(uuid "080ec123-9608-44fd-8726-4f04fec9c011")
 			(effects
@@ -51424,7 +51424,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/1d0596d2-08f8-4a81-b5a9-ee261660ee11")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -51528,7 +51528,7 @@
 			(uuid "d9754357-d290-4fd1-a73f-cc9e98cd0392")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "992f10d9-ce5e-4ab5-848f-f964359d1d5d")
 			(effects
@@ -51575,7 +51575,7 @@
 		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "fuse")
 		(property "Reference" "F6"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "96a03074-cc5c-4298-b02e-9571520ea949")
@@ -51587,7 +51587,7 @@
 			)
 		)
 		(property "Value" "8A"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "1b2ca854-d047-4a53-addc-31c0791312c7")
 			(effects
@@ -51638,7 +51638,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/6bbe2d80-61a7-4321-9d6a-cc1236fb4f73")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -51742,7 +51742,7 @@
 			(uuid "2c71ab2d-e801-4545-a926-6a4e90f26f04")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5f107491-57f5-4b6b-98b1-d9a0f06d326a")
 			(effects
@@ -51852,7 +51852,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/fa1c331b-a935-4fac-a54d-07c0b57f7731")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -52066,7 +52066,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8cdb1f37-6241-4cb3-812f-43b0e0154942")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -52279,7 +52279,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/2c0a093a-473c-4336-9194-c0f2b6269ac2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -52490,7 +52490,7 @@
 		(descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U11"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "21e25228-dc4f-4056-8c38-057bf810d193")
@@ -52502,7 +52502,7 @@
 			)
 		)
 		(property "Value" "UCC27517"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "783eca25-d63b-4f5b-a2a9-26436b14708b")
 			(effects
@@ -52553,7 +52553,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/ee983367-1cd7-41a0-9d97-ed259745ec3b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -52699,7 +52699,7 @@
 			(uuid "eb3e928a-82cc-413b-b1f6-01fc00e0be6e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "fa419ef9-14aa-4889-bf7c-0103c37f2ef3")
 			(effects
@@ -52838,7 +52838,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/702c8ede-500f-418e-a14c-db951aa836d2")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -53136,7 +53136,7 @@
 		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/8451998a-c17b-493b-83fe-b7ffdaa04d4a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -53350,7 +53350,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/9f920c8b-61bc-4ff9-83a1-cad4ba4d4d65")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -53564,7 +53564,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ea3dc8a1-21a1-44b8-86f9-57e197b82c44")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -53778,7 +53778,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/439eb038-1cc1-4e6a-a2f9-81ebc12fe919")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -53992,7 +53992,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/1d797d1a-1c16-4422-a86e-6939a220a2e3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -54206,7 +54206,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/aa45021d-bc13-46aa-9b2c-0bfcf0c67d4b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -54442,7 +54442,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/67d07344-55a5-458f-82c7-4af321be69f9")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -55971,7 +55971,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/86d14f8f-8e33-4be4-938e-e562bdfe523c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -56122,7 +56122,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C63"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4e59b468-23ff-472f-a5db-51a0205ec7ce")
@@ -56134,7 +56134,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "b169f49a-db41-44a0-a993-54f2c6702de9")
 			(effects
@@ -56185,7 +56185,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/80439d9d-31d0-47c3-bb3a-2635257b5a84")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -56289,7 +56289,7 @@
 			(uuid "d8174578-4735-43e7-a2d9-248682d6dd58")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9b9b0975-66c3-4492-adec-0de15792eb42")
 			(effects
@@ -56399,7 +56399,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ed5b17ee-f55a-4b1d-939f-269f5f88d7ff")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -56550,7 +56550,7 @@
 		(descr "Inductor, Coilcraft, MSS1260-XXX, 12.0x12.0x6.0mm, (https://www.coilcraft.com/getmedia/febefb9b-60f9-4a2c-8525-9c396f34e363/mss1260.pdf), generated with kicad-footprint-generator gen_inductor.py")
 		(tags "Inductor mss")
 		(property "Reference" "L8"
-			(at 0 -7 360)
+			(at 0 -7 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2ff4e255-f83c-4946-b24b-00a35779efdf")
@@ -56562,7 +56562,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 0 7 360)
+			(at 0 7 0)
 			(layer "F.Fab")
 			(uuid "f370b104-b332-456d-b00f-ee3b46bd418b")
 			(effects
@@ -56573,7 +56573,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Coilcraft_MSS1260-XXX"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "acac0b93-2ce2-434e-933e-6c51f15afa5a")
@@ -56585,7 +56585,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9d53e3de-d163-4eba-9deb-434ffe6badbd")
@@ -56597,7 +56597,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "daa858ae-1ca2-4942-8edb-c1817e12ab28")
@@ -56610,7 +56610,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/3ba0c2a3-8b6b-42f8-b99e-c2f3bb09d193")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -56796,7 +56796,7 @@
 			(uuid "504e09f1-b70c-4fa5-8e83-15f29ba216d3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c93f3170-987e-4659-904b-2d4ee3f60035")
 			(effects
@@ -56908,7 +56908,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/d718d8bd-494a-4957-a4f5-9b8496b53542")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -57122,7 +57122,7 @@
 		)
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/79db9291-1f0c-4d29-8355-eabb96baf9ec")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -57438,7 +57438,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/2ade02f4-9a57-4147-9337-4a2b1aa94167")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -57652,7 +57652,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a8f7ddd9-6bf4-41ac-8b4d-badd2e1c9458")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -57866,7 +57866,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/725a367d-923d-4beb-9da0-63e03ac8e7d4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -58235,7 +58235,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/309682a1-5c52-423b-b313-037bb601ab21")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -58382,7 +58382,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ca8cb898-a7ed-4ed1-8bf4-ec0b4dfbcd05")
-		(at 198.725 40.53)
+		(at 310.475 44.53)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R10"
@@ -58449,7 +58449,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2147ab3e-0c54-4db3-8954-4101beb58123")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -58600,7 +58600,7 @@
 		(descr "D_SOD-123F")
 		(tags "D_SOD-123F")
 		(property "Reference" "D11"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "26b79324-d65d-4954-95ae-e0c06d6ddbf3")
@@ -58612,7 +58612,7 @@
 			)
 		)
 		(property "Value" "K34"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "24fac0e5-28a0-4dba-9541-56bcfd01804b")
 			(effects
@@ -58663,7 +58663,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f43cf70b-d5f4-422a-8692-8fef01837ee1")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -58847,7 +58847,7 @@
 			(uuid "c057d70c-d525-40ec-b729-3fb2e4d60aea")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.127 -1.905 360)
+			(at -0.127 -1.905 0)
 			(layer "F.Fab")
 			(uuid "181eafa4-713e-4283-821c-6b81193f26cb")
 			(effects
@@ -58958,7 +58958,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/af17c835-6af3-4ca1-bc0c-be19130734a7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -59109,7 +59109,7 @@
 		(descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U12"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "90d538d2-16b2-487d-9e34-2917c3059d21")
@@ -59121,7 +59121,7 @@
 			)
 		)
 		(property "Value" "UCC27517"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "69344b3d-114e-4f35-94a7-850c13f40f27")
 			(effects
@@ -59172,7 +59172,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/5dadd62b-7f65-444a-9071-7d97c5749545")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -59318,7 +59318,7 @@
 			(uuid "816a2f6f-ea4c-4b3d-980a-bf4488673c5f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "85634440-9ff1-4805-b610-7406e0c4b9a0")
 			(effects
@@ -59460,7 +59460,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0f4d09c0-75b8-4982-b64e-fcce1a4bd9ec")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -59674,7 +59674,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8c3ad24f-83c4-4434-825a-82bdc07d7747")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd dnp)
 		(fp_line
@@ -59888,7 +59888,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/001d86d1-b477-4b51-af8b-7304de0010f6")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -61417,7 +61417,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8eda9d26-63db-4c46-810b-75eaca41573a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -61631,7 +61631,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f326674e-c7e6-4ed5-bf0f-2da7e93641dd")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -61867,7 +61867,7 @@
 		(descr "Inductor, Coilcraft, MSS1260-XXX, 12.0x12.0x6.0mm, (https://www.coilcraft.com/getmedia/febefb9b-60f9-4a2c-8525-9c396f34e363/mss1260.pdf), generated with kicad-footprint-generator gen_inductor.py")
 		(tags "Inductor mss")
 		(property "Reference" "L6"
-			(at 0 -7 360)
+			(at 0 -7 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "aa900ac9-1d8f-4aed-98f5-f2b4c00c31c3")
@@ -61879,7 +61879,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 0 7 360)
+			(at 0 7 0)
 			(layer "F.Fab")
 			(uuid "99987e7e-130b-4a7a-8661-95c2de9f0b1d")
 			(effects
@@ -61890,7 +61890,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Coilcraft_MSS1260-XXX"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d733943c-479a-4572-8a22-ee5667da81dc")
@@ -61902,7 +61902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b6c80f85-3686-4f5a-8af4-def690f42f91")
@@ -61914,7 +61914,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d5f6d265-26c4-43db-b59d-f542a6b8ba90")
@@ -61927,7 +61927,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/571dba20-ac11-43f8-ba69-e4cab3543258")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -62113,7 +62113,7 @@
 			(uuid "62174005-3a54-41bc-b8dd-147eaef1f1ec")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5979034b-31fc-4b1b-bbc9-8c64426a0972")
 			(effects
@@ -62225,7 +62225,7 @@
 		)
 		(property ki_fp_filters "TDSON*")
 		(path "/196e2930-b60c-4efe-969a-104394dea971")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -62594,7 +62594,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/7786a53a-7a00-4d4b-a94e-0ecdeba54121")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -62911,7 +62911,7 @@
 		)
 		(property ki_fp_filters "D*SMF*")
 		(path "/c9dc5126-1f9d-4269-8f6f-6a07b385f78b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -63134,7 +63134,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C73"
-			(at 1.25 -4.4 360)
+			(at 1.25 -4.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "877a2a84-cf4c-4aed-8600-6a745ff6e15b")
@@ -63146,7 +63146,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 1.25 4.4 360)
+			(at 1.25 4.4 0)
 			(layer "F.Fab")
 			(uuid "cc151b84-e85d-4994-bfef-8217eeda83a8")
 			(effects
@@ -63197,7 +63197,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/0dc6c253-68a6-4ab4-8ead-085155cbf273")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -64614,7 +64614,7 @@
 			(uuid "5c55b469-4224-4f11-adce-705b54d70369")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "623c8023-fd88-4557-a0ca-7b9a4e1bc589")
 			(effects
@@ -64725,7 +64725,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/47b5105b-68de-42a6-9c6a-98140fb4a05d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -64872,7 +64872,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e0ba179a-c410-4fa3-8b26-1cec79e7689e")
-		(at 198.725 35.51)
+		(at 310.475 39.51)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R8"
@@ -64939,7 +64939,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a61b6f36-801e-454f-8a20-808b86e7ff82")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -65153,7 +65153,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/5937a2a8-6aa7-4770-aab8-74122a008467")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -65367,7 +65367,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/4dcc8c2a-1a99-43f4-bb0a-18f05e8dce4d")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -65581,7 +65581,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/1e6d1252-b80d-4c0f-b38e-e318a84aad4b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -67047,7 +67047,7 @@
 		(descr "Bourns SRN4018 series SMD inductor, https://www.bourns.com/docs/Product-Datasheets/SRN4018.pdf")
 		(tags "Bourns SRN4018 SMD inductor")
 		(property "Reference" "L2"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b96b7cf4-db31-4080-8141-613f37ed6e1b")
@@ -67059,7 +67059,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 0 -3.1 360)
+			(at 0 -3.1 0)
 			(layer "F.Fab")
 			(uuid "f86360fd-eff7-4578-acf5-ab1bc1b44345")
 			(effects
@@ -67110,7 +67110,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/d50ca66c-6fc7-4034-af33-10c1fe71eeee")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -67274,7 +67274,7 @@
 			(uuid "efae6596-401d-4267-b430-77bb42281936")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a60cd6f1-ec93-4950-b57a-ddd9cd9e5477")
 			(effects
@@ -67321,7 +67321,7 @@
 		(descr "Bourns SRN4018 series SMD inductor, https://www.bourns.com/docs/Product-Datasheets/SRN4018.pdf")
 		(tags "Bourns SRN4018 SMD inductor")
 		(property "Reference" "L1"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38a5bd69-baf8-495a-88b9-efd14aa7ec59")
@@ -67333,7 +67333,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 0 -3.1 360)
+			(at 0 -3.1 0)
 			(layer "F.Fab")
 			(uuid "073d732c-874a-4bad-b6a9-ddacb9b09837")
 			(effects
@@ -67384,7 +67384,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/54c10656-1063-477e-9a7c-c39556214a87")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -67548,7 +67548,7 @@
 			(uuid "6dc4dc5a-bbc6-4225-bfec-291554e978d5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7f728582-c263-4a9b-8836-daf63ef70350")
 			(effects
@@ -67658,7 +67658,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ac2ac258-b0bb-41de-a055-229026ce58bb")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -67872,7 +67872,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c6b504bf-dafa-4d93-b689-d398ce70dcf3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -68086,7 +68086,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/664c3b0a-ca06-4004-966b-d62d18a4ceb6")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -68300,7 +68300,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/94a2e2f3-480d-490e-b0ad-d6bf7fe7b63f")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -68447,7 +68447,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "eb1b3e1a-8731-4d93-abd8-f1df3aad0a16")
-		(at 234 44 -90)
+		(at 346.5 58.25 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C92"
@@ -68514,7 +68514,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ba4a66df-9c35-49c8-a365-4666e7796b94")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -68728,7 +68728,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x3mm*P0.65mm*")
 		(path "/9ee628c3-f940-4dcc-bd49-22e066828468")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -68978,7 +68978,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ebb05c4a-693a-4fe9-9eb3-38ba858eb3bd")
-		(at 198.725 38.02)
+		(at 310.475 42.02)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R9"
@@ -69045,7 +69045,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7426be37-7343-4267-bdf4-4816eb53b512")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -69258,7 +69258,7 @@
 		)
 		(property ki_fp_filters "LED*WS2812*-2020_PLCC4*")
 		(path "/f769e8aa-1671-4e9a-86ac-21c6364ee06b")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -69532,7 +69532,7 @@
 		)
 		(property ki_fp_filters "Crystal*")
 		(path "/dc18a120-5e7c-4ba6-9a9b-1cb904203242")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -69711,7 +69711,7 @@
 		(descr "PowerDI,Diode,Vishay,https://www.diodes.com/assets/Package-Files/PowerDI5.pdf")
 		(tags "PowerDI diode vishay")
 		(property "Reference" "D13"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4cadd519-d74d-41eb-bd21-1f7d824b2ad4")
@@ -69723,7 +69723,7 @@
 			)
 		)
 		(property "Value" "SB1045"
-			(at 0 3 360)
+			(at 0 3 0)
 			(layer "F.Fab")
 			(uuid "7602d52a-ad3d-4a06-8370-eefd5dfb5c10")
 			(effects
@@ -69774,7 +69774,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/547ca9a9-50ee-42ad-8105-6b6e18d53ef1")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -69958,7 +69958,7 @@
 			(uuid "04440adf-293b-433f-a4ab-29d29c9835ee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -3 360)
+			(at 0 -3 0)
 			(layer "F.Fab")
 			(uuid "51bdbc5f-b637-46c3-9576-833493bea114")
 			(effects
@@ -70077,7 +70077,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f944ed84-3552-477e-96c6-6352e23929a3")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -70291,7 +70291,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/71139dce-2c46-436d-9a8e-4d97a290a85c")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -70505,7 +70505,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/2263f7ca-0038-46be-b1a8-326a9a0b1bb4")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -70745,7 +70745,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C76"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "78296bf3-e877-4b3e-bb09-185da34e6311")
@@ -70757,7 +70757,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(uuid "84d3df79-02e0-4f07-aae6-00e9f9d207c4")
 			(effects
@@ -70808,7 +70808,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/1da7e87e-d840-4a22-a35f-20af4653f0f7")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -70912,7 +70912,7 @@
 			(uuid "eb24511b-6f62-436e-a321-9b5d12f11c59")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c2813ae2-4143-4ec1-8732-b43a4f21583e")
 			(effects
@@ -70955,7 +70955,7 @@
 	(footprint "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f875e632-9c1e-4bcb-a20f-f55f3fa0f8e8")
-		(at 238.5 38.1 90)
+		(at 350.25 42.1 90)
 		(descr "AMASS female XT60, through hole, vertical, https://www.tme.eu/Document/2d152ced3b7a446066e6c419d84bb460/XT60%20SPEC.pdf")
 		(tags "XT60 female vertical")
 		(property "Reference" "J1"
@@ -71022,7 +71022,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ad7d5a25-246f-47ed-b32f-ddc39068945a")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -71234,7 +71234,7 @@
 			(drill 4.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Net-(D3-K)")
+			(net 14 "Net-(J1-Pin_2)")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "a3fba3e4-bcc2-405d-821b-73e63b93616b")
@@ -71254,7 +71254,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "f96c6f61-6029-4e10-8605-bb26368245fb")
-		(at 198.725 30.49 180)
+		(at 310.475 34.49 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C38"
@@ -71321,7 +71321,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/575ba525-d50f-4c0a-8e18-af620553ddec")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -71534,7 +71534,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3353e615-a4c8-421b-8675-f616bec55d96")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -71681,7 +71681,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "fc615248-847e-4dea-8493-b5aee4baddce")
-		(at 207.3625 44 90)
+		(at 319.1125 48 90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R6"
@@ -71748,7 +71748,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/d6cad0c1-888b-4359-b5ec-56440f72ab68")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -71962,7 +71962,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/74e3d885-3f96-40aa-ad9d-320f86dff233")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -72176,7 +72176,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7a11ed91-2080-4ab4-a299-38cd90c92427")
-		(sheetname "根目录")
+		(sheetname "Root")
 		(sheetfile "SmartTBBatteryCharger.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -72321,8 +72321,8 @@
 		)
 	)
 	(gr_rect
-		(start 201 26.5)
-		(end 243 46.5)
+		(start 315 1.75)
+		(end 357 21.75)
 		(stroke
 			(width 0.1)
 			(type default)
