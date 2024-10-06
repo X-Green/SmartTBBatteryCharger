@@ -1558,259 +1558,6 @@
 				)
 			)
 		)
-		(symbol "Device:Crystal_GND24"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 3.175 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Crystal_GND24"
-				(at 3.175 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Crystal_GND24_0_1"
-				(rectangle
-					(start -1.143 2.54)
-					(end 1.143 -2.54)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -1.27) (xy -2.032 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 0 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 -1.27) (xy 2.032 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Crystal_GND24_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 1.27)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:D_Schottky"
 			(pin_numbers hide)
 			(pin_names
@@ -3000,6 +2747,304 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Resonator"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Resonator"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.635 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.635 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Three pin ceramic resonator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ceramic resonator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Filter* Resonator*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Resonator_0_1"
+				(rectangle
+					(start -3.429 -3.175)
+					(end -1.397 -3.429)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.429 -2.413)
+					(end -1.397 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -2.413 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.032)
+					(end 1.016 -2.032)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -3.81)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 -2.413) (xy -2.413 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -3.175 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -1.27) (xy 1.778 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0) (xy 2.413 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 -3.302) (xy 2.413 -3.81) (xy -2.413 -3.81) (xy -2.413 -3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.397 -3.175)
+					(end 3.429 -3.429)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.397 -2.413)
+					(end 3.429 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.413 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Resonator_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6799,12 +6844,6 @@
 		(uuid "1e4be5b9-5b45-456f-bdc7-caba40105e68")
 	)
 	(junction
-		(at 92.71 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ed0d7c0-3f4f-480f-b2b4-e99f06ffabd4")
-	)
-	(junction
 		(at 288.29 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6863,12 +6902,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3187516f-8c48-44ce-a025-6f1e8362a267")
-	)
-	(junction
-		(at 92.71 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31a8356c-7009-4553-bd37-b1da4854a80e")
 	)
 	(junction
 		(at 35.56 270.51)
@@ -6973,12 +7006,6 @@
 		(uuid "5f8887c3-6f82-4308-a4a0-50707bedc3ec")
 	)
 	(junction
-		(at 86.36 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6123d46a-a926-4862-9c1f-b11f9d3a0632")
-	)
-	(junction
 		(at 256.54 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7049,6 +7076,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72f01571-bf46-4403-b644-c03c0043a760")
+	)
+	(junction
+		(at 91.44 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72fa3962-82e8-42d6-92d2-dbde82c2a56f")
 	)
 	(junction
 		(at 97.79 223.52)
@@ -7970,7 +8003,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 73.66) (xy 52.07 68.58)
+			(xy 53.34 73.66) (xy 53.34 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8220,7 +8253,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 45.72) (xy 92.71 45.72)
+			(xy 91.44 45.72) (xy 99.06 45.72)
 		)
 		(stroke
 			(width 0)
@@ -9040,7 +9073,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 73.66) (xy 52.07 73.66)
+			(xy 43.18 73.66) (xy 53.34 73.66)
 		)
 		(stroke
 			(width 0)
@@ -10100,7 +10133,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 38.1) (xy 86.36 38.1)
+			(xy 69.85 38.1) (xy 91.44 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10260,6 +10293,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 38.1) (xy 99.06 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6119a62-2c1b-460f-b8de-5c63d26de614")
+	)
+	(wire
+		(pts
 			(xy 260.35 114.3) (xy 260.35 110.49)
 		)
 		(stroke
@@ -10360,7 +10403,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 68.58) (xy 57.15 68.58)
+			(xy 53.34 68.58) (xy 57.15 68.58)
 		)
 		(stroke
 			(width 0)
@@ -10377,16 +10420,6 @@
 			(type default)
 		)
 		(uuid "d1162dec-1966-43e9-9094-bf2d1d350033")
-	)
-	(wire
-		(pts
-			(xy 92.71 38.1) (xy 99.06 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d265e80d-fc84-416d-a182-89d172df8edb")
 	)
 	(wire
 		(pts
@@ -10470,16 +10503,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 38.1) (xy 92.71 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6ef986f-40fa-4bf0-950d-48130b87230d")
-	)
-	(wire
-		(pts
 			(xy 90.17 242.57) (xy 99.06 242.57)
 		)
 		(stroke
@@ -10527,16 +10550,6 @@
 			(type default)
 		)
 		(uuid "d8b43107-744e-4cdc-98e8-16ce6866de56")
-	)
-	(wire
-		(pts
-			(xy 92.71 45.72) (xy 99.06 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da042b52-31df-464d-bde3-5d14ba533b69")
 	)
 	(wire
 		(pts
@@ -11773,6 +11786,71 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 69.85 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09b7d26d-bbec-4848-ad6c-688c4eb5b7c0")
+		(property "Reference" "#PWR031"
+			(at 31.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 32.766 69.596 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f447315f-3dd5-46d0-a423-a668b9b9d398")
+		)
+		(instances
+			(project "SmartTBBatteryChargerSingleChannel"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -16058,71 +16136,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 38.1 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a9cdde7-655a-40f3-a319-59aa1cb415f7")
-		(property "Reference" "#PWR031"
-			(at 38.1 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 38.1 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57663294-e595-4c15-a915-74c58ca8ad89")
-		)
-		(instances
-			(project "SmartTBBatteryCharger"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 48.26 58.42 90)
 		(unit 1)
@@ -17740,6 +17753,78 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Resonator")
+		(at 43.18 69.85 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c80e353-973f-4fcc-9740-b04f61b57e03")
+		(property "Reference" "Y3"
+			(at 44.45 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSTCE8M"
+			(at 44.196 72.644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Crystal:Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering"
+			(at 43.18 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Three pin ceramic resonator"
+			(at 43.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9f654664-e165-4110-ab26-0a2b11cf8e3c")
+		)
+		(pin "1"
+			(uuid "add8a0d2-f9b0-482b-824f-c856aa972f2e")
+		)
+		(pin "2"
+			(uuid "da491599-d779-4684-81f6-eb997ee14388")
+		)
+		(instances
+			(project ""
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "Y3")
 					(unit 1)
 				)
 			)
@@ -21637,7 +21722,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 86.36 41.91 180)
+		(at 91.44 41.91 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21645,7 +21730,7 @@
 		(dnp no)
 		(uuid "8ff06eb4-8efa-4d68-ba17-8ebfb5666a26")
 		(property "Reference" "C23"
-			(at 86.614 39.624 0)
+			(at 91.694 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21654,7 +21739,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 86.868 44.45 0)
+			(at 91.948 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21663,7 +21748,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 85.3948 38.1 0)
+			(at 90.4748 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21672,7 +21757,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 41.91 0)
+			(at 91.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21681,7 +21766,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 86.36 41.91 0)
+			(at 91.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24371,75 +24456,6 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 41.91 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b2a01292-7b24-4499-9b25-4da55e9d0747")
-		(property "Reference" "C24"
-			(at 92.964 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 93.218 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 91.7448 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d99f8370-dce3-465d-8f40-8aace6b44b10")
-		)
-		(pin "1"
-			(uuid "07d1ffd3-28bc-47c5-bdd7-a45042894f79")
-		)
-		(instances
-			(project "SmartTBBatteryCharger"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -27523,79 +27539,6 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal_GND24")
-		(at 43.18 69.85 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc18a120-5e7c-4ba6-9a9b-1cb904203242")
-		(property "Reference" "Y1"
-			(at 30.48 64.8968 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Crystal_GND24"
-			(at 30.48 67.4368 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 43.18 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 4"
-			(at 43.18 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "22b24265-4336-4e00-8370-bb5ac994840e")
-		)
-		(pin "3"
-			(uuid "9603c5b8-9ff3-4423-bab3-9aef50aa200d")
-		)
-		(pin "4"
-			(uuid "5111e8f8-4360-42d7-9232-7dc8c4c08f08")
-		)
-		(pin "1"
-			(uuid "8181aa1f-87bc-45ce-8fe7-c82e2e278f72")
-		)
-		(instances
-			(project ""
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
