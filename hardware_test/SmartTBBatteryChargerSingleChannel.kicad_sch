@@ -7580,6 +7580,10 @@
 		(uuid "13c02305-8b41-463d-92c8-6eb82040779c")
 	)
 	(no_connect
+		(at 57.15 81.28)
+		(uuid "2a5d1255-b4ff-4456-b9e4-861c997aca04")
+	)
+	(no_connect
 		(at 92.71 91.44)
 		(uuid "2e7683d5-ada4-41ae-8b35-95bf1093c416")
 	)
@@ -7658,10 +7662,6 @@
 	(no_connect
 		(at 57.15 71.12)
 		(uuid "991dc73c-71ce-480c-9b88-7ca839cdd9d8")
-	)
-	(no_connect
-		(at 365.76 193.04)
-		(uuid "99ee39c4-7d8e-402f-a54b-893604f99483")
 	)
 	(no_connect
 		(at 92.71 101.6)
@@ -11572,28 +11572,6 @@
 		(uuid "f6619ce0-21b5-4387-a715-30c78a82a8cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 48.1777 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ISENSE_INPUT"
-		(shape input)
-		(at 57.15 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffe0a3bf-4da7-4599-83e8-819f089e0893")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.0415 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28891,7 +28869,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LinkedLibrary:MLT-9032"
+		(property "Footprint" "0_RM2024:MLT-9032"
 			(at 211.455 252.73 90)
 			(effects
 				(font
