@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "LinkedLibrary")(type "KiCad")(uri "${KIPRJMOD}/RM2024_Hardware_Core/LinkedLibrary.pretty")(options "")(descr ""))
+)
