@@ -180,9 +180,9 @@
       "track_widths": [
         0.0,
         0.2,
-        0.3,
-        0.4,
-        0.8,
+        0.254,
+        0.381,
+        0.508,
         1.0,
         1.6,
         2.0
@@ -587,6 +587,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
