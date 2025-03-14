@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2024 STMicroelectronics.
+  * Copyright (c) 2025 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -57,8 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define VPP_SENSE_A2I3_Pin GPIO_PIN_6
-#define VPP_SENSE_A2I3_GPIO_Port GPIOA
+#define A1I6_IIN_Pin GPIO_PIN_0
+#define A1I6_IIN_GPIO_Port GPIOC
+#define A1I7_IB_Pin GPIO_PIN_1
+#define A1I7_IB_GPIO_Port GPIOC
+#define A1I8_IA_Pin GPIO_PIN_2
+#define A1I8_IA_GPIO_Port GPIOC
+#define OA1_VA_Pin GPIO_PIN_7
+#define OA1_VA_GPIO_Port GPIOA
+#define OA2_VB_Pin GPIO_PIN_0
+#define OA2_VB_GPIO_Port GPIOB
+#define OA6_VIN_Pin GPIO_PIN_13
+#define OA6_VIN_GPIO_Port GPIOB
 #define ARGB_TIM4_CH1_Pin GPIO_PIN_11
 #define ARGB_TIM4_CH1_GPIO_Port GPIOA
 #define BUZZER_TIM5_CH2_Pin GPIO_PIN_12

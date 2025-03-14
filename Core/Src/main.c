@@ -96,23 +96,16 @@ int main(void)
   MX_ADC1_Init();
   MX_ADC2_Init();
   MX_ADC4_Init();
-  MX_ADC5_Init();
   MX_HRTIM1_Init();
   MX_OPAMP1_Init();
   MX_OPAMP2_Init();
-  MX_OPAMP3_Init();
-  MX_OPAMP4_Init();
-  MX_OPAMP5_Init();
   MX_OPAMP6_Init();
   MX_TIM4_Init();
   MX_TIM5_Init();
   MX_TIM16_Init();
   MX_UART4_Init();
-  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-  extern void systemStart();
-  systemStart();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -162,7 +155,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
