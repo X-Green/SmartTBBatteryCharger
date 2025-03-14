@@ -81,7 +81,15 @@ ASM_SOURCES =  \
 startup_stm32g474xx.s
 
 # ASM sources
-ASMM_SOURCES = 
+ASMM_SOURCES =
+
+# CPP sources
+CPP_SOURCES =  \
+$(wildcard Core/Src/*.cpp) \
+$(wildcard Utils/Src/*.cpp) \
+$(wildcard Tasks/Src/*.cpp)
+
+
 
 
 #######################################
@@ -135,11 +143,13 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
--ICore/Inc \
+-ICore/Inc  \
 -IDrivers/STM32G4xx_HAL_Driver/Inc \
 -IDrivers/STM32G4xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32G4xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-IUtils/Inc \
+-ITasks/Inc
 
 include SmartBattCharger.mk
 

@@ -13,7 +13,7 @@
 #include "main.h"
 #include "tim.h"
 
-#define BUZZER_TIM htim8
+#define BUZZER_TIM htim5
 #define BUZZER_TIM_CHANNEL TIM_CHANNEL_4
 #define BUZZER_TIM_CHANNEL_CCR CCR4
 

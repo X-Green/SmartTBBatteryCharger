@@ -21,10 +21,10 @@ void init()
 
 extern "C"
 {
-    void TIM8_UP_IRQHandler(void)
+    void TIM5_UP_IRQHandler(void)
     {
-        __HAL_TIM_CLEAR_FLAG(&htim8, TIM_FLAG_UPDATE);
-        __HAL_TIM_DISABLE_IT(&htim8, TIM_IT_UPDATE);
+        __HAL_TIM_CLEAR_FLAG(&htim5, TIM_FLAG_UPDATE);
+        __HAL_TIM_DISABLE_IT(&htim5, TIM_IT_UPDATE);
         Buzzer::stop();
     }
 }

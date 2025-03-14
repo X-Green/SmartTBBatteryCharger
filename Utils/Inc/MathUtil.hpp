@@ -1,6 +1,6 @@
 #pragma once
 
-#include "main.h"
+#include "../../Core/Inc/main.h"
 //#include "arm_math.h"
 
 #define M_MIN(a, b) ((a) < (b) ? (a) : (b))
