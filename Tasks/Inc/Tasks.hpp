@@ -2,7 +2,5 @@
 // Created by xiaol on 2024/8/31.
 //
 
-#ifndef TASKS_HPP
-#define TASKS_HPP
+#pragma once
 
-#endif //TASKS_HPP
