@@ -1,0 +1,33 @@
+@startuml
+
+hide empty description
+
+[*] -> Startup
+
+Startup -> Detecting
+
+state Charging {
+ChargingPre -> ChargingFast
+
+ChargingFast -> ChargingCV
+}
+
+Detecting --> ChargingPre
+Detecting --> ChargingFast
+Detecting --> ChargingCV
+
+Error : errorCode
+ChargingPre --> Error
+ChargingFast --> Error
+ChargingCV --> Error
+
+Detecting --> Error
+
+Startup --> Error
+Error --> Startup
+
+
+
+
+
+@enduml

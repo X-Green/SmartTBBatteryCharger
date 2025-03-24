@@ -6,9 +6,14 @@
 #include "adc.h"
 #include "main.h"
 #include "opamp.h"
-#include "tim.h"
+#include "ChargerChannel.hpp"
 
 namespace Tasks {
+
+    ChargerChannel channel1 = ChargerChannel(
+            HRTIM_TIMERID_TIMER_B, HRTIM_OUTPUT_TB1 | HRTIM_OUTPUT_TB2,
+            IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f)
+    );
 
     void updateChargers() {
 
@@ -19,6 +24,7 @@ namespace Tasks {
     }
 
     volatile uint16_t adc1Buffer[3] = {};
+    static volatile uint32_t *ptr2R_1 = nullptr;
 
 
     void init() {
@@ -45,14 +51,24 @@ namespace Tasks {
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_A);
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_B);
 
+        channel1.channelEnableOutput();
+
+        channel1.initChannel(
+                &(hhrtim1.Instance->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_B].CMP1xR),
+                &(hhrtim1.Instance->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_B].CMP3xR)
+        );
     }
 
-    static volatile uint16_t adc2Value = 0;
-    static volatile uint16_t adc4Value = 0;
+    uint16_t adc2Value = 0;
+    uint16_t adc4Value = 0;
+
+    static volatile float testDuty = 0.5f;
 
     void loop() {
         adc2Value = HAL_ADC_GetValue(&hadc2);
         adc4Value = HAL_ADC_GetValue(&hadc4);
+
+        channel1.channelSetPWM(testDuty);
     }
 }
 
