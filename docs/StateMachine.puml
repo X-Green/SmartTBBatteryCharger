@@ -14,7 +14,8 @@ ChargingFast -> ChargingCV
 
 Detecting --> ChargingPre
 Detecting --> ChargingFast
-Detecting --> ChargingCV
+ChargingCV --> Detecting
+
 
 Error : errorCode
 ChargingPre --> Error
