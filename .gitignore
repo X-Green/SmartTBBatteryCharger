@@ -2,4 +2,5 @@ build/
 cmake/
 cmake-build-debug/
 .idea/
-/compile_commands.json
+compile_commands.json
+*.su
