@@ -7,9 +7,9 @@
 #include "main.h"
 #include "opamp.h"
 #include "ChargerChannel.hpp"
+#include "ChargerCommon.hpp"
 
 namespace Tasks {
-
     ChargerChannel channel2 = ChargerChannel(
             HRTIM_TIMERID_TIMER_B, HRTIM_OUTPUT_TB1 | HRTIM_OUTPUT_TB2,
             IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f),
@@ -17,19 +17,11 @@ namespace Tasks {
     );
 
     void updateChargers() {
-
     }
 
     void checkError() {
-
     }
 
-    /**
-     * Rank: 0->I_IN, 1->IB, 2->IA
-     */
-    volatile uint16_t adc1Buffer[3] = {};
-
-    static volatile uint32_t *ptr2R_1 = nullptr;
 
 
     void init() {
@@ -45,13 +37,13 @@ namespace Tasks {
         HAL_Delay(100);
         HAL_ADCEx_Calibration_Start(&hadc4, ADC_SINGLE_ENDED);
 
-        HAL_ADC_Start_DMA(&hadc1, (uint32_t *) (adc1Buffer), 3);
+        HAL_ADC_Start_DMA(&hadc1, (uint32_t *) (ChargerCommon::adc1Buffer), 3);
 
         HAL_ADC_Start(&hadc2);
         HAL_ADC_Start(&hadc4);
 
 
-        __HAL_HRTIM_MASTER_ENABLE_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);  // enable master repetition interrupt
+        __HAL_HRTIM_MASTER_ENABLE_IT(&hhrtim1, HRTIM_MASTER_IT_MREP); // enable master repetition interrupt
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_MASTER);
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_A);
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_B);
@@ -73,16 +65,13 @@ namespace Tasks {
     volatile float gain_VIN = 1.0f;
     volatile float bias_VIN = 0.0f;
 
-    static volatile float testDuty = 0.5f;
-
-    static volatile float voltageVIN = 0.0f;
 
     void loop() {
         adc2Value = HAL_ADC_GetValue(&hadc2);
         adc4Value = HAL_ADC_GetValue(&hadc4);
-        voltageVIN = (adc4Value) * gain_VIN - bias_VIN;
+        ChargerCommon::voltageInput = (float) adc4Value * gain_VIN - bias_VIN;
         channel2.setVoltageDataRaw(adc2Value);
-        channel2.channelSetPWM(testDuty);
+        channel2.channelSetPWM(ChargerCommon::testDuty);
     }
 }
 
@@ -97,8 +86,6 @@ void HRTIM1_Master_IRQHandler() {
     nana++;
     __HAL_HRTIM_MASTER_CLEAR_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);
 
-    Tasks::channel2.setCurrentDataRaw(Tasks::adc1Buffer[1]);
-
+    Tasks::channel2.setCurrentDataRaw(ChargerCommon::adc1Buffer[1]);
 }
-
 }

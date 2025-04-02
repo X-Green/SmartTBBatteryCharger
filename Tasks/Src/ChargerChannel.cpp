@@ -3,6 +3,7 @@
 //
 
 #include "ChargerChannel.hpp"
+#include "ChargerCommon.hpp"
 
 void ChargerChannel::initChannel(volatile uint32_t *regCmpRise, volatile uint32_t *regCmpFall) {
     this->pRegCMPRise = regCmpRise;
@@ -23,26 +24,45 @@ void ChargerChannel::checkChannelError() {
 
 void ChargerChannel::stateMachineTransition() {
     switch (this->state) {
-        case OFF:
-            // Just Disable output
+        case STARTUP:
+            /**
+             * BEHAVIOR: Perform Hardware Check
+             * TRANSITION: If Hardware Check is OK, transition to DETECTING. Else, transition to ERROR
+             */
             break;
 
 
-        case IDLE:
+        case DETECTING:
             /**
              *
              * BEHAVIOR:
-             *  Under IDLE state, charger give a small pwm duty cycle.
+             *  Under DETECTING state, charger give 2% duty cycle.
              *  At DCM mode, small duty cycle is given so that output voltage is same as input voltage without load.
              *  This is used to trigger the battery that is not turned on.
              *
              * TRANSITION:
-             *  1. If voltage is pulled to 15V~(input-0.3V), means battery is detected, transition to CHARGING
-             *  2. If voltage is pulled under 15V, means shorted, transition to ERROR_SHORT
-             *  3. If current is larger than 0.5A, means overcurrent, transition to ERROR_OVERCURRENT
-             *  4. If voltage is larger than (input+0.5V), means overvoltage, transition to ERROR_OVERVOLTAGE
-             *  5. Can be manually triggered to CHARGING
+             *  If voltage is pulled under 15V, means shorted, transition to ERROR
+             *  Else If current is larger than 0.5A or smaller than -0.3A, means overcurrent, transition to ERROR
+             *  Else If voltage is larger than (input+0.5V), means overvoltage, transition to ERROR
+             *  Else If voltage < 21V, transition to CHARGING_PRE
+             *  Else If voltage < input-0.3V, transition to CHARGING_FAST
+             *  Else Stay in DETECTING
+             *  Can be manually triggered to CHARGING (By signal)
              */
+            if (this->voltageOut < 15.0f) {
+                this->state = ERROR_STATE;
+            } else if (this->currentOut > 0.5f || this->currentOut < -0.3f) {
+                this->state = ERROR_STATE;
+            } else if (this->voltageOut > (ChargerCommon::voltageInput + 0.5f)) {
+                this->state = ERROR_STATE;
+            } else if (this->voltageOut < 21.0f) {
+                this->state = CHARGING_PRE;
+            } else if (this->voltageOut < ChargerCommon::voltageInput - 0.3f) {
+                this->state = CHARGING_FAST;
+            } else {
+                this->state = DETECTING;
+            }
+
 
             break;
 
@@ -64,11 +84,7 @@ void ChargerChannel::stateMachineTransition() {
              */
 
             break;
-        case ERROR_SHORT:
-            break;
-        case ERROR_OVERVOLTAGE:
-            break;
-        case ERROR_OVERCURRENT:
+        case ERROR_STATE:
             break;
 
     }

@@ -8,7 +8,6 @@
 #include "hrtim.h"
 #include "IncrementalPID.hpp"
 
-
 class ChargerChannel {
 
 
@@ -32,17 +31,15 @@ public:
     float currentOut = 0.0f;
 
     enum ChannelState {
-        OFF,
-        IDLE,
+        STARTUP,
+        DETECTING,
         CHARGING_PRE,
         CHARGING_FAST,
         CHARGING_CV,
-        ERROR_SHORT,
-        ERROR_OVERVOLTAGE,
-        ERROR_OVERCURRENT,
+        ERROR_STATE
     };
 
-    ChannelState state = OFF;
+    ChannelState state = STARTUP;
 
     IncrementalPID pidCurrent;
 
