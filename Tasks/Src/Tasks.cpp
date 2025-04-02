@@ -10,9 +10,10 @@
 
 namespace Tasks {
 
-    ChargerChannel channel1 = ChargerChannel(
+    ChargerChannel channel2 = ChargerChannel(
             HRTIM_TIMERID_TIMER_B, HRTIM_OUTPUT_TB1 | HRTIM_OUTPUT_TB2,
-            IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f)
+            IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f),
+            -0.0081527f, 26.03f, -0.0102f, 20.8632f
     );
 
     void updateChargers() {
@@ -23,7 +24,11 @@ namespace Tasks {
 
     }
 
+    /**
+     * Rank: 0->I_IN, 1->IB, 2->IA
+     */
     volatile uint16_t adc1Buffer[3] = {};
+
     static volatile uint32_t *ptr2R_1 = nullptr;
 
 
@@ -51,24 +56,33 @@ namespace Tasks {
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_A);
         HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_B);
 
-        channel1.channelEnableOutput();
+        channel2.channelEnableOutput();
 
-        channel1.initChannel(
+        channel2.initChannel(
                 &(hhrtim1.Instance->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_B].CMP1xR),
                 &(hhrtim1.Instance->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_B].CMP3xR)
         );
     }
 
+    /** ADC2/OA2 -> VB */
     uint16_t adc2Value = 0;
+
+    /** ADC4/OA6 -> V_IN */
     uint16_t adc4Value = 0;
 
+    volatile float gain_VIN = 1.0f;
+    volatile float bias_VIN = 0.0f;
+
     static volatile float testDuty = 0.5f;
+
+    static volatile float voltageVIN = 0.0f;
 
     void loop() {
         adc2Value = HAL_ADC_GetValue(&hadc2);
         adc4Value = HAL_ADC_GetValue(&hadc4);
-
-        channel1.channelSetPWM(testDuty);
+        voltageVIN = (adc4Value) * gain_VIN - bias_VIN;
+        channel2.setVoltageDataRaw(adc2Value);
+        channel2.channelSetPWM(testDuty);
     }
 }
 
@@ -82,6 +96,9 @@ void HRTIM1_Master_IRQHandler() {
     static volatile uint16_t nana = 0;
     nana++;
     __HAL_HRTIM_MASTER_CLEAR_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);
+
+    Tasks::channel2.setCurrentDataRaw(Tasks::adc1Buffer[1]);
+
 }
 
 }
