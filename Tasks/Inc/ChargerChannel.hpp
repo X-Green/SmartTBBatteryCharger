@@ -30,12 +30,16 @@ public:
     float voltageOut = 0.0f;
     float currentOut = 0.0f;
 
+    bool errorOCFlag = false;
+    bool errorShortFlag = false;
+    bool errorOVFlag = false;
+    bool errorSupplyFlag = false;
+
     enum ChannelState {
         STARTUP,
         DETECTING,
         CHARGING_PRE,
         CHARGING_FAST,
-        CHARGING_CV,
         ERROR_STATE
     };
 

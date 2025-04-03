@@ -8,19 +8,16 @@ Startup -> Detecting
 
 state Charging {
 ChargingPre -> ChargingFast
-
-ChargingFast -> ChargingCV
 }
 
 Detecting --> ChargingPre
 Detecting --> ChargingFast
-ChargingCV --> Detecting
+ChargingFast --> Detecting
 
 
 Error : errorCode
 ChargingPre --> Error
 ChargingFast --> Error
-ChargingCV --> Error
 
 Detecting --> Error
 
