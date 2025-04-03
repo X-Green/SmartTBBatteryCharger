@@ -36,20 +36,16 @@ public:
     bool errorSupplyFlag = false;
 
     enum ChannelState {
-        STARTUP,
-        DETECTING,
-        CHARGING_PRE,
-        CHARGING_FAST,
+        IDLE,
+        CHARGING,
         ERROR_STATE
     };
 
-    ChannelState state = STARTUP;
+    ChannelState state = IDLE;
 
     IncrementalPID pidCurrent;
 
     void initChannel(volatile uint32_t *regCmpRise, volatile uint32_t *regCmpFall);
-
-    void stateMachineTransition();
 
     void updateChannelStatus();
 
