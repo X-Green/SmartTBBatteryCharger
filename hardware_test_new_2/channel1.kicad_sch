@@ -2882,50 +2882,6 @@
 		)
 		(uuid "fdf30be1-3af5-4900-adc1-f3eb1529d7a0")
 	)
-	(global_label "CHA_SHUNT+"
-		(shape input)
-		(at 106.68 52.07 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b14db2af-4171-4e9f-95f1-b8269bedce82")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.68 67.4529 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CHA_SHUNT-"
-		(shape input)
-		(at 110.49 52.07 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eb25942a-c8a5-4510-9879-d017121c4f80")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.49 67.4529 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "CH_ISENSE"
 		(shape input)
 		(at 82.55 68.58 180)
@@ -2994,6 +2950,17 @@
 	)
 	(hierarchical_label "CH_SHUNT+"
 		(shape input)
+		(at 106.68 52.07 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8398217d-c2f5-4657-b4e3-e6d6329f4e3d")
+	)
+	(hierarchical_label "CH_SHUNT+"
+		(shape input)
 		(at 52.07 72.39 180)
 		(effects
 			(font
@@ -3002,6 +2969,17 @@
 			(justify right)
 		)
 		(uuid "897c3f78-e4ab-42d1-862c-937e45e10b38")
+	)
+	(hierarchical_label "CH_SHUNT-"
+		(shape input)
+		(at 110.49 52.07 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c6fd043-ccc0-4a55-a8d9-e7f5d53a0c9b")
 	)
 	(hierarchical_label "CH_VSENSE"
 		(shape input)
@@ -3068,15 +3046,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "4d7fc204-fbb6-4e58-924c-b7d785e37f23")
+			(uuid "3fc3079b-6f2f-4de2-8686-b47af91ae20c")
 		)
 		(pin "1"
-			(uuid "b9d4dbc2-91a6-41b1-a49b-f9cadfccbc03")
+			(uuid "2e7374b3-83d4-47fe-a35e-1f8ecdb952a4")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C46")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C83")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C82")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C81")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C66")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3139,24 +3133,40 @@
 			)
 		)
 		(pin "4"
-			(uuid "0b5ed6b5-e47f-469e-8ebc-a90a85ec8a47")
+			(uuid "fe4e6e89-a68c-483d-8980-2f83774a5f11")
 		)
 		(pin "1"
-			(uuid "a53d101b-eac8-4f0e-848c-8488e305baf7")
+			(uuid "520eda64-4cea-4b41-a67a-3c2f02ada3ae")
 		)
 		(pin "3"
-			(uuid "369b45bb-cbba-4766-bb51-ce780993639d")
+			(uuid "45f8b658-99da-4309-b539-e54815901ed6")
 		)
 		(pin "5"
-			(uuid "4d1d0912-0be2-4d34-a65c-922d7fa53030")
+			(uuid "c00dd8e9-0c71-477b-92f4-7507d9de728a")
 		)
 		(pin "2"
-			(uuid "5033583f-8aa9-46a3-ba9e-dd742afc531f")
+			(uuid "6fc7a41f-583e-4191-b347-8274be12de21")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "U5")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "U11")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "U10")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "U9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "U8")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3220,15 +3230,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "b00debce-1607-4d80-ad86-5d74c0a6520b")
+			(uuid "dc8434ee-c88a-48bd-bdcb-093d600504b0")
 		)
 		(pin "1"
-			(uuid "5bdca9e4-2fcf-4699-a80b-85d8c8e6c1f6")
+			(uuid "fbb6d9d0-aed2-474e-a1fe-28ad98d997c0")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C59")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C97")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C96")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C95")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C70")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3292,15 +3318,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "32191210-8cc1-4c8e-8a42-f8d560ee7be4")
+			(uuid "59e04844-02b4-49cb-8acd-dcb83783a76c")
 		)
 		(pin "1"
-			(uuid "e8899a60-bff6-4f89-8efd-c9e158301d38")
+			(uuid "d2127e88-0f47-4669-978d-7bdea18a18b1")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C40")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C74")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C73")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C72")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C42")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3365,12 +3407,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2050ce9-3fab-4e0c-b68e-0c125a434cf0")
+			(uuid "81a543f3-9cd8-4666-b5a9-f4ed53edc48c")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR049")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR094")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3436,21 +3494,37 @@
 			)
 		)
 		(pin "2"
-			(uuid "12f6ee51-657e-4c7d-9677-62a6a4da8e64")
+			(uuid "0c81f79f-7fa0-4d81-8e4b-37d74de11b29")
 		)
 		(pin "3"
-			(uuid "80b0867a-ad55-45d1-8d14-8c935ecc7688")
+			(uuid "2b2179f7-7c05-4339-a2f7-ec5511e4bab6")
 		)
 		(pin "1"
-			(uuid "a8c79595-357e-490a-8936-65589349858a")
+			(uuid "3352968b-9646-4e25-b28c-14f0fa832497")
 		)
 		(pin "4"
-			(uuid "5cf52f68-1c42-4b50-af7c-083f302ea62c")
+			(uuid "c04a5f6b-306d-4f5e-ab56-d42e43031cd5")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "R5")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "R11")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "R10")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "R9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "R8")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3515,12 +3589,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "67b781d4-2f5b-4448-a455-eefdf59dd00e")
+			(uuid "81c0247f-c55d-481f-aa2c-74e248e326a9")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR048")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR089")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3585,12 +3675,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c2e219f-6d0e-482e-a5d5-e2eab76cb9ca")
+			(uuid "e9e62ab4-cdf6-4fe8-83b4-beff0e3622ef")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR077")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR097")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR099")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR098")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR086")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3653,15 +3759,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf9e0efe-fd70-4975-b7b8-92e2d877c103")
+			(uuid "c54a941d-e55c-4162-8d12-fb0c6fb9c7f8")
 		)
 		(pin "2"
-			(uuid "bdea1ce4-cb7a-4a4a-8749-90509f5b2cf3")
+			(uuid "f2d46d02-1951-48b5-9315-4364bcb44b5a")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "R15")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "R52")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "R51")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "R50")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "R40")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3725,15 +3847,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "d118bf38-33cd-4e77-a9c4-ac1223053cea")
+			(uuid "47822cce-c455-40ef-8a5a-d8f3591279f7")
 		)
 		(pin "2"
-			(uuid "d7a1477e-3a3a-4e4a-b62b-d1ad6f126728")
+			(uuid "555a2d4b-41f8-43d6-9845-0df254d0fc47")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "L4")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "L9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "L8")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "L7")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "L6")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3797,12 +3935,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "b983d62c-019e-43d7-952b-3c9e6ae978fa")
+			(uuid "16e7c82c-6c05-4637-a36d-d124544b746e")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR032")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR037")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR036")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR035")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR034")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3866,15 +4020,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "d4252cbd-aa15-4ae7-84e7-46c5b96e2f9a")
+			(uuid "df98d6b3-783a-449c-aba5-fd5caf32471e")
 		)
 		(pin "1"
-			(uuid "6ed4e1ba-73e4-4115-a175-7d072e8826ea")
+			(uuid "a2b3325c-72c3-4fe7-9ca4-206d8abfd332")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C45")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C80")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C79")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C78")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C65")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -3937,15 +4107,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e26e963-40d9-4570-b747-421a3e8c0d47")
+			(uuid "877ea3e7-9dd9-4b7f-a7ba-ddbcd518ef01")
 		)
 		(pin "2"
-			(uuid "85d5592f-6c80-401f-b19d-3976bfa45edd")
+			(uuid "c37a1dba-7c10-4ed7-bdcc-b09670d062f4")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "R14")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "R49")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "R48")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "R47")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "R39")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4009,12 +4195,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "31fabaef-cefd-4bdc-bb76-86368177936d")
+			(uuid "261a93ae-e118-4abb-88d2-394f116e51f8")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR052")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0126")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR093")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4079,12 +4281,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "34323778-aa25-4275-971b-b110b7ec7884")
+			(uuid "aab00099-3d79-4e38-b766-8029599b8e43")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR070")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0135")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0134")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR096")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4150,15 +4368,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "074aace4-cfec-46e8-a269-fe067f43b3db")
+			(uuid "f2fb2deb-56fd-496e-987c-e2b70fb75bcd")
 		)
 		(pin "2"
-			(uuid "0aa30b7a-3bcb-4fdd-8208-2f3172b75548")
+			(uuid "fc4a1838-5033-4a6c-952c-f9cf29dfa8d0")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "D3")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "D16")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "D14")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "D13")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "D12")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4224,12 +4458,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "874b3416-a964-4efa-bf98-1ff363ca48c3")
+			(uuid "06f4cb81-d6be-47fe-9034-798f4e37a525")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0132")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0130")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR095")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4295,15 +4545,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "e697f297-2b94-42cc-9b2b-16fea3fb3a01")
+			(uuid "92df036f-3333-4748-9da5-e740c0e92cbe")
 		)
 		(pin "2"
-			(uuid "173a8e1c-a733-489f-8a3e-f04a812acbae")
+			(uuid "247efea9-4b15-4f2e-86cb-4c94af1eae5f")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "F3")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "F10")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "F9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "F6")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "F5")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4368,12 +4634,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "619523d9-de51-402b-9a3f-c8ce1941175e")
+			(uuid "d9996802-4f50-4451-9329-572dbd21cddc")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR047")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR092")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4439,15 +4721,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "716f0439-86bf-401b-a34b-b43b52e7c03b")
+			(uuid "4dc5ebcb-7285-486c-a178-f0391c9bd149")
 		)
 		(pin "1"
-			(uuid "44a33296-f198-4d04-8082-224dbd3b58cf")
+			(uuid "1b13cd9d-ec93-4563-808d-9917854582d7")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "J3")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "J10")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "J9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "J6")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "J5")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4510,15 +4808,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "f61519b1-2642-4be6-ba7e-6bd732cfd79f")
+			(uuid "9ad830bb-5239-4cd4-9cc1-b70cc4821ab4")
 		)
 		(pin "2"
-			(uuid "c5aea22a-6e29-44f6-99e3-c116b7bbf54a")
+			(uuid "066c5bb5-c713-454f-a01f-37882f6a9455")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "R28")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "R43")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "R42")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "R41")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4582,15 +4896,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "068f7eea-1709-4ec8-b03e-2124bf34ff10")
+			(uuid "a10dbb1c-ae7d-4e3a-8ed9-6acc31cbba40")
 		)
 		(pin "1"
-			(uuid "f3ae8c4b-6538-426a-b915-8165b404cf41")
+			(uuid "8c1f1a53-7cb7-450b-95e7-447e0b46dc09")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C61")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C92")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C93")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C94")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C69")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4654,15 +4984,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "36acde2a-50dc-40dd-9892-aaeed5fd2175")
+			(uuid "62f4d29a-effa-4d57-8f2c-2a277f47acdf")
 		)
 		(pin "1"
-			(uuid "45879757-c387-42c8-a913-35e9ea2fd311")
+			(uuid "ae888627-3db1-480b-8656-d3c626f656c9")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C44")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C86")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C85")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C84")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C67")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4728,12 +5074,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "552c2303-bc91-4db9-8322-ea599f9ee817")
+			(uuid "66e84ac2-a9b9-4034-a3df-f5a375a52d62")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR072")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR087")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4796,15 +5158,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c7f6114-025a-46c8-a1f7-d3006f824579")
+			(uuid "aea369b1-e8eb-461c-80bc-76c10da9f0a5")
 		)
 		(pin "2"
-			(uuid "3410fcae-272f-435d-9c8f-ddb58775f7de")
+			(uuid "b75b5571-d134-4be8-8de9-336207a9689a")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "R29")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "R46")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "R45")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "R44")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "R38")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4869,12 +5247,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "f0074cfd-6c8a-42fc-b687-c39faf93ddbb")
+			(uuid "3b76020e-b003-41af-8df8-4b1d97ddcc80")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR050")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR091")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -4942,24 +5336,40 @@
 			)
 		)
 		(pin "1"
-			(uuid "d44cbee4-ed4f-4bf1-8304-98177bbee88d")
+			(uuid "60352b48-f316-46cb-adcd-cc56753c9957")
 		)
 		(pin "3"
-			(uuid "197d0b87-ec19-4fd0-b75e-306e187b074c")
+			(uuid "19d25f6c-6e9f-4875-b85c-c3582b850822")
 		)
 		(pin "5"
-			(uuid "c29e608e-9eb8-4371-b228-d33ebcf25ee3")
+			(uuid "c586b749-af06-48fe-bae6-0b8ae2662b1b")
 		)
 		(pin "2"
-			(uuid "2e04f2cd-9afe-4045-8f32-73e91beed199")
+			(uuid "0a86495b-bb87-40b6-bb3e-e243d6d769ea")
 		)
 		(pin "4"
-			(uuid "81bb8658-c124-4b82-969c-2390da291a45")
+			(uuid "d4ec6bbf-eae5-4331-861d-ce2b17026bb6")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "Q4")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "Q9")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "Q8")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "Q7")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "Q6")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -5025,12 +5435,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "561d60ec-551b-48e7-8476-dbd8b71f63cc")
+			(uuid "fd2ba9c5-f5c1-417c-a49f-1359ae10ff3e")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR073")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR088")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -5096,12 +5522,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "090e28bc-5a08-4fd0-b412-3102376fe6ef")
+			(uuid "9182005a-f41b-4fae-a9b7-d110ccba8ea6")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "#PWR074")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "#PWR090")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -5165,15 +5607,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "f4f9358c-9a14-49a3-95ce-03cc6d023975")
+			(uuid "6d14b3c4-51b6-4da3-b94a-4f09157d0339")
 		)
 		(pin "1"
-			(uuid "4ce0a948-848d-49e6-8f55-98a10a0d8445")
+			(uuid "3ccc52ab-9853-4955-aa83-5270d5938bf9")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C43")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C77")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C76")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C75")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C58")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -5236,15 +5694,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "e6964960-383b-44ea-b48f-1220e71ae5ed")
+			(uuid "8c7ec1d3-fe15-45a8-8741-92e4d4687346")
 		)
 		(pin "1"
-			(uuid "92a7aeb7-2358-476f-ada3-8e779f6afcef")
+			(uuid "c158f1a2-0e6b-4756-accf-83ae1091e2c6")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C50")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C100")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C99")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C98")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C71")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"
@@ -5307,15 +5781,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "c92fa6ff-d8c6-4575-bfa0-dc07f2f05cac")
+			(uuid "ad575f6a-d838-4df2-89e6-ad89fbbc22d8")
 		)
 		(pin "1"
-			(uuid "4a6ea366-2fc6-4639-b869-abdd6038a80d")
+			(uuid "18114a7a-9552-4f00-a54c-fdb7861571e5")
 		)
 		(instances
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5b48843c-f7ad-4bfc-b32e-83bc8c34afb1"
 					(reference "C60")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/5d6681a3-b3d7-494e-b825-eba5d827984d"
+					(reference "C89")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/6c8fa6fa-8148-45ea-be1c-4514ddfadfd3"
+					(reference "C88")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/79a7b00c-779e-46bd-9436-d406a475edc0"
+					(reference "C87")
+					(unit 1)
+				)
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/eee5022b-90b1-47ad-a49b-03c8e291125e"
+					(reference "C68")
 					(unit 1)
 				)
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6/f8f5f3ef-029a-41bb-b960-a8deaadf5be8"

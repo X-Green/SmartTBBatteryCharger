@@ -653,6 +653,22 @@
     [
       "f8f5f3ef-029a-41bb-b960-a8deaadf5be8",
       "ChannelA2"
+    ],
+    [
+      "eee5022b-90b1-47ad-a49b-03c8e291125e",
+      "ChannelB1"
+    ],
+    [
+      "79a7b00c-779e-46bd-9436-d406a475edc0",
+      "ChannelB2"
+    ],
+    [
+      "6c8fa6fa-8148-45ea-be1c-4514ddfadfd3",
+      "ChannelC1"
+    ],
+    [
+      "5d6681a3-b3d7-494e-b825-eba5d827984d",
+      "ChannelC2"
     ]
   ],
   "text_variables": {}

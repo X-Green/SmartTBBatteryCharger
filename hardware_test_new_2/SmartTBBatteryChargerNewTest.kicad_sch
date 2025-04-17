@@ -9465,6 +9465,50 @@
 		)
 		(uuid "fe6896fe-aa9d-4691-926e-7e1968ba31ce")
 	)
+	(global_label "CHB2_HG"
+		(shape input)
+		(at 340.36 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "07c0385e-b478-4c6b-8857-d9ae485adb02")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.7267 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHC1_SW"
+		(shape input)
+		(at 340.36 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c134e41-b00a-471c-9d5c-64d9d0daeb38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.6663 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SWDCK"
 		(shape input)
 		(at 48.26 35.56 0)
@@ -9522,6 +9566,28 @@
 		(uuid "3263979d-b73d-4ee2-b58a-263f0f9a8e0c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 205.8995 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHC1_HG"
+		(shape input)
+		(at 340.36 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3d5fe28c-d4d9-4761-8266-956b252cb4c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.7267 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9729,6 +9795,50 @@
 			)
 		)
 	)
+	(global_label "CHA2_SW"
+		(shape input)
+		(at 340.36 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78edc99c-bec2-4406-b532-4b08b157459d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.8477 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHA1_HG"
+		(shape input)
+		(at 340.36 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c73b12f-83b7-4c04-8950-9f89b1f88777")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.9081 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CHA_HG"
 		(shape input)
 		(at 250.19 43.18 0)
@@ -9773,6 +9883,116 @@
 			)
 		)
 	)
+	(global_label "CHC2_SW"
+		(shape input)
+		(at 340.36 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abacbc8b-b195-4034-81f2-ae106ad215e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.6663 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHB2_SW"
+		(shape input)
+		(at 340.36 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abcd3d8a-3e9e-48d4-91ce-811db763e7a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.6663 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHA2_HG"
+		(shape input)
+		(at 340.36 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abe8b8d5-5fa0-41d4-b144-42fa171661dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.9081 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHB1_HG"
+		(shape input)
+		(at 340.36 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7f3fe28-64a4-46d7-bfbd-21722f3fb49a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.7267 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHB1_SW"
+		(shape input)
+		(at 340.36 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba698148-f541-4750-8f65-9d5277efaa4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.6663 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BUZZER"
 		(shape input)
 		(at 189.23 260.35 180)
@@ -9786,6 +10006,28 @@
 		(uuid "c56bd577-9672-4916-a1b5-9096e2dece10")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 179.3783 260.2706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHC2_HG"
+		(shape input)
+		(at 340.36 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb079fa7-83ac-405d-9bf0-6cc647652eb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.7267 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9857,6 +10099,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CHA1_SW"
+		(shape input)
+		(at 340.36 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d9614f46-855d-44a8-86b3-536cf57e2c82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 328.8477 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -19355,6 +19619,334 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 340.36 154.94)
+		(size 25.4 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d6681a3-b3d7-494e-b825-eba5d827984d")
+		(property "Sheetname" "ChannelC2"
+			(at 340.36 154.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel1.kicad_sch"
+			(at 340.36 170.7646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_HG" input
+			(at 340.36 158.75 180)
+			(uuid "8d51a94d-3965-4049-b91a-15350704e941")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_ISENSE" input
+			(at 365.76 165.1 0)
+			(uuid "826cfa71-d9d4-4325-a18c-0e4aea52b072")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CH_SW" input
+			(at 340.36 165.1 180)
+			(uuid "2adbf248-5068-4a80-b3df-6a9b95e8db25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_VSENSE" input
+			(at 365.76 158.75 0)
+			(uuid "578073df-c801-41b7-8836-cad6f4f16e32")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 340.36 130.81)
+		(size 25.4 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6c8fa6fa-8148-45ea-be1c-4514ddfadfd3")
+		(property "Sheetname" "ChannelC1"
+			(at 340.36 130.0984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel1.kicad_sch"
+			(at 340.36 146.6346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_HG" input
+			(at 340.36 134.62 180)
+			(uuid "97fd8967-32cc-4d9d-b570-4824dc410fa9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_ISENSE" input
+			(at 365.76 140.97 0)
+			(uuid "0f2fe71f-1089-4b05-9517-e06da427fb0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CH_SW" input
+			(at 340.36 140.97 180)
+			(uuid "a8444cfc-017f-4782-8cfd-56b7693f4fbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_VSENSE" input
+			(at 365.76 134.62 0)
+			(uuid "fc32c73d-12b0-40c5-a916-faeff77a90ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 340.36 106.68)
+		(size 25.4 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "79a7b00c-779e-46bd-9436-d406a475edc0")
+		(property "Sheetname" "ChannelB2"
+			(at 340.36 105.9684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel1.kicad_sch"
+			(at 340.36 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_HG" input
+			(at 340.36 110.49 180)
+			(uuid "95713f8c-1594-4f0d-bdfd-7e7fc2f104da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_ISENSE" input
+			(at 365.76 116.84 0)
+			(uuid "bc246ea5-53f1-4249-ba21-74d7000422db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CH_SW" input
+			(at 340.36 116.84 180)
+			(uuid "b8f9967c-c8fb-4d8d-92d8-45a85a6a3981")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_VSENSE" input
+			(at 365.76 110.49 0)
+			(uuid "d9436012-821c-4f08-ac02-625342a9a956")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 340.36 76.2)
+		(size 25.4 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eee5022b-90b1-47ad-a49b-03c8e291125e")
+		(property "Sheetname" "ChannelB1"
+			(at 340.36 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel1.kicad_sch"
+			(at 340.36 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CH_HG" input
+			(at 340.36 80.01 180)
+			(uuid "f4de38a1-e989-4a9b-bea3-3837dfaae7ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_ISENSE" input
+			(at 365.76 86.36 0)
+			(uuid "bd0c7965-5972-41c8-a073-bf6f744cba35")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CH_SW" input
+			(at 340.36 86.36 180)
+			(uuid "99f5a7ef-a06b-44c9-b642-c1094b0aa598")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CH_VSENSE" input
+			(at 365.76 80.01 0)
+			(uuid "4eea8f69-2b19-41f9-97fd-6805dc42bf60")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(page "4")
 				)
 			)
 		)
