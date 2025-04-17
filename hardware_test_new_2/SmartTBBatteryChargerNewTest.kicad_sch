@@ -8990,16 +8990,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 45.72) (xy 57.15 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "537ad6b9-dd72-44eb-976c-833d4a68e0ba")
-	)
-	(wire
-		(pts
 			(xy 186.69 254) (xy 193.04 254)
 		)
 		(stroke
@@ -10700,6 +10690,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 45.72) (xy 58.42 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0d7f9d-2538-4deb-b1cb-19fbd1c4ff00")
+	)
+	(wire
+		(pts
 			(xy 36.83 30.48) (xy 34.29 30.48)
 		)
 		(stroke
@@ -11117,6 +11117,16 @@
 			(type default)
 		)
 		(uuid "ff582fd0-7a08-4c6f-b91e-cf743fe916fa")
+	)
+	(label "VREF"
+		(at 58.42 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f070200a-2dfe-49c3-a614-4eab5600d3dc")
 	)
 	(global_label "CHC2_SW"
 		(shape input)
@@ -13252,72 +13262,6 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 60.96 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "055fc56c-d2c7-4bec-8c74-aab7db7d7d55")
-		(property "Reference" "#PWR018"
-			(at 60.96 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 60.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 60.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3766861e-2d14-4019-8c24-7ea110ddbfb7")
-		)
-		(instances
-			(project "SmartTBBatteryChargerNewTest"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
