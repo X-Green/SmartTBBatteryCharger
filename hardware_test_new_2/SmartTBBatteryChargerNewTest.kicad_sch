@@ -5902,6 +5902,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad_MP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad_MP"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection as pad named MP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_MP_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_MP_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -7371,12 +7478,6 @@
 		(uuid "2adcb3d2-5bc7-48f2-b42f-5101f2fc6e2d")
 	)
 	(junction
-		(at 35.56 262.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2cabc01c-2ba4-4081-846c-77311db5bf41")
-	)
-	(junction
 		(at 314.96 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7399,12 +7500,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3187516f-8c48-44ce-a025-6f1e8362a267")
-	)
-	(junction
-		(at 35.56 270.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "347d7ca2-6a2b-44f6-b830-9b9ee9b65191")
 	)
 	(junction
 		(at 104.14 242.57)
@@ -7767,12 +7862,6 @@
 		(uuid "bee81813-0f9b-4644-8ae5-c57bf75340bf")
 	)
 	(junction
-		(at 90.17 267.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c90610db-96d0-472d-9934-2add27f5a477")
-	)
-	(junction
 		(at 107.95 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7943,6 +8032,10 @@
 		(uuid "13c02305-8b41-463d-92c8-6eb82040779c")
 	)
 	(no_connect
+		(at 269.24 265.43)
+		(uuid "1660cb44-76e3-44e3-b3e8-9fb42120f03f")
+	)
+	(no_connect
 		(at 365.76 77.47)
 		(uuid "204ce4fb-c91d-40de-a6e9-0eb9e0cb5f54")
 	)
@@ -8015,6 +8108,10 @@
 		(uuid "60fd6089-2ed8-457e-abb5-d4b34f16733a")
 	)
 	(no_connect
+		(at 269.24 278.13)
+		(uuid "6334869a-7957-46fa-b610-898cc548a52a")
+	)
+	(no_connect
 		(at 243.84 57.15)
 		(uuid "651f1156-cb51-4e34-b1d3-18d1657bfdfe")
 	)
@@ -8043,6 +8140,10 @@
 		(uuid "8290d649-20c5-477a-abb5-6b5ecaf9db7a")
 	)
 	(no_connect
+		(at 269.24 259.08)
+		(uuid "866d0b37-697c-4b0e-96de-15742acbf4a9")
+	)
+	(no_connect
 		(at 92.71 99.06)
 		(uuid "8ee5272e-d6a6-4603-bfe3-b7e7910026a4")
 	)
@@ -8065,6 +8166,10 @@
 	(no_connect
 		(at 264.16 100.33)
 		(uuid "9eea3c5c-4b25-4abb-9f23-cdd4dcf4451f")
+	)
+	(no_connect
+		(at 269.24 271.78)
+		(uuid "9fae3dfa-5b2f-47fd-bb8c-7ba2ec08434e")
 	)
 	(no_connect
 		(at 232.41 100.33)
@@ -8210,6 +8315,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 220.98) (xy 140.97 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08614e56-3f96-4775-9edc-b4c2e2edc921")
+	)
+	(wire
+		(pts
 			(xy 228.6 180.34) (xy 227.33 180.34)
 		)
 		(stroke
@@ -8227,6 +8342,16 @@
 			(type default)
 		)
 		(uuid "0cb34c36-bd38-4857-ab9c-2ba754faf5ab")
+	)
+	(wire
+		(pts
+			(xy 113.03 275.59) (xy 115.57 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dee2fa0-c7c5-4749-841e-31645dbbed21")
 	)
 	(wire
 		(pts
@@ -8510,16 +8635,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 275.59) (xy 96.52 275.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24ac136e-e377-4410-9ca5-b73d92b6bc92")
-	)
-	(wire
-		(pts
 			(xy 322.58 233.68) (xy 330.2 233.68)
 		)
 		(stroke
@@ -8577,16 +8692,6 @@
 			(type default)
 		)
 		(uuid "2951b5b4-255d-49bc-b257-34b6bc26d168")
-	)
-	(wire
-		(pts
-			(xy 135.89 215.9) (xy 135.89 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b97d1a3-6ec7-4c1a-950c-70dc5fe2b65a")
 	)
 	(wire
 		(pts
@@ -8730,7 +8835,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 270.51) (xy 35.56 270.51)
+			(xy 29.21 270.51) (xy 46.99 270.51)
 		)
 		(stroke
 			(width 0)
@@ -8890,6 +8995,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 218.44) (xy 138.43 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4973d164-9550-455f-96bc-93443bb978ae")
+	)
+	(wire
+		(pts
 			(xy 33.02 224.79) (xy 33.02 223.52)
 		)
 		(stroke
@@ -8937,16 +9052,6 @@
 			(type default)
 		)
 		(uuid "4b2b6767-2dfb-4363-ad91-d24e387b04c7")
-	)
-	(wire
-		(pts
-			(xy 104.14 267.97) (xy 104.14 275.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e0c0b08-17c3-46c6-a3aa-b10430d07b11")
 	)
 	(wire
 		(pts
@@ -9140,7 +9245,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 262.89) (xy 44.45 262.89)
+			(xy 29.21 262.89) (xy 44.45 262.89)
 		)
 		(stroke
 			(width 0)
@@ -9337,16 +9442,6 @@
 			(type default)
 		)
 		(uuid "73e54078-7b96-4db9-abed-704d057ef998")
-	)
-	(wire
-		(pts
-			(xy 135.89 242.57) (xy 135.89 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "772baeb8-be36-43a0-b124-019d0a4109ca")
 	)
 	(wire
 		(pts
@@ -10240,16 +10335,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 267.97) (xy 96.52 267.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b743c909-6757-4f38-9c7f-67582e06410d")
-	)
-	(wire
-		(pts
 			(xy 50.8 190.5) (xy 52.07 190.5)
 		)
 		(stroke
@@ -10490,16 +10575,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 270.51) (xy 46.99 270.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8533e1d-9cdf-4586-bbe2-0ee4385bf690")
-	)
-	(wire
-		(pts
 			(xy 241.3 115.57) (xy 243.84 115.57)
 		)
 		(stroke
@@ -10567,6 +10642,16 @@
 			(type default)
 		)
 		(uuid "d11be391-b757-4690-8bc3-930d6af52216")
+	)
+	(wire
+		(pts
+			(xy 113.03 273.05) (xy 113.03 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d23e11b9-ab62-4620-b65f-e84c8554c713")
 	)
 	(wire
 		(pts
@@ -10967,16 +11052,6 @@
 			(type default)
 		)
 		(uuid "f100fef3-2eea-457d-b59b-5edaaaa79749")
-	)
-	(wire
-		(pts
-			(xy 29.21 262.89) (xy 35.56 262.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f20a7696-994d-4f78-8473-9b88652f07e7")
 	)
 	(wire
 		(pts
@@ -14158,7 +14233,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "100u"
 			(at 88.9 273.812 0)
 			(effects
 				(font
@@ -14167,7 +14242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 88.5952 275.59 0)
 			(effects
 				(font
@@ -14407,6 +14482,71 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 220.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15d3c2ae-42d5-45bd-9d0b-fb2b0345d031")
+		(property "Reference" "#PWR0165"
+			(at 162.56 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.036 221.234 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98e040e3-09c8-46e1-8b01-997b5b8ffe89")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -15919,6 +16059,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 127 275.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b83a243-a336-4149-88a6-bbcbaa7cb387")
+		(property "Reference" "D32"
+			(at 127 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 128.27 272.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 127 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 127 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 127 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c2d8414-0537-4cf1-8c34-3a300228b7da")
+		)
+		(pin "1"
+			(uuid "e133c503-fa21-4c47-9f28-cc402f2f3be7")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 104.14 246.38 0)
 		(unit 1)
@@ -16407,7 +16623,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "10u"
 			(at 46.228 52.07 0)
 			(effects
 				(font
@@ -16526,6 +16742,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad_MP")
+		(at 271.78 265.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "322e8753-be7b-4161-9494-ea57d95213f8")
+		(property "Reference" "H2"
+			(at 275.59 264.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_MP"
+			(at 275.59 266.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 271.78 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 271.78 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MP"
+			(uuid "c7ec9ed9-4246-4a12-aae6-0733fd3dee43")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 90.17 246.38 0)
 		(unit 1)
@@ -16589,74 +16872,6 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 132.08 242.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33abca11-dc46-430e-839f-4a23120bfb1b")
-		(property "Reference" "R20"
-			(at 132.08 236.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 132.08 238.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 132.08 244.348 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 132.08 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e219bcb-bfd7-46d5-adbf-257c50601a75")
-		)
-		(pin "2"
-			(uuid "e9840689-f002-4330-b8fd-e826bba0c4dc")
-		)
-		(instances
-			(project "SmartTBBatteryChargerSingleChannel"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -17023,7 +17238,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 113.9952 223.52 0)
 			(effects
 				(font
@@ -17489,6 +17704,73 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad_MP")
+		(at 271.78 259.08 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46f6c2bb-0af8-4a7b-8dc7-6cab592f2f17")
+		(property "Reference" "H1"
+			(at 275.59 257.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_MP"
+			(at 275.59 260.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MP"
+			(uuid "982f7932-ca40-4b82-90b8-7d7bafcba956")
+		)
+		(instances
+			(project ""
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -19141,7 +19423,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "100n"
 			(at 52.578 52.07 0)
 			(effects
 				(font
@@ -19194,16 +19476,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 215.9 90)
+		(at 144.78 220.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "63cc82d4-43b9-4f90-a847-1253b8a1e8a1")
-		(property "Reference" "R19"
-			(at 132.08 209.55 90)
+		(uuid "644143cd-bd8c-4572-b0ee-8fb17a18bb79")
+		(property "Reference" "R66"
+			(at 144.78 214.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19211,7 +19493,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 132.08 212.09 90)
+			(at 144.78 217.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19219,7 +19501,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 132.08 217.678 90)
+			(at 144.78 222.758 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19228,7 +19510,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 215.9 0)
+			(at 144.78 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19237,7 +19519,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 215.9 0)
+			(at 144.78 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19246,15 +19528,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b5f2274-577e-41d9-918d-4205af7e3d7f")
+			(uuid "0e8fc7b3-c13a-4db3-b288-e6e87211e25a")
 		)
 		(pin "2"
-			(uuid "b35495ce-d62b-435a-bf1b-5f3dc97ae40b")
+			(uuid "69534ddc-ff1a-4b83-9581-8c5a27b58d14")
 		)
 		(instances
-			(project "SmartTBBatteryChargerSingleChannel"
+			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "R19")
+					(reference "R66")
 					(unit 1)
 				)
 			)
@@ -19460,6 +19742,73 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 138.43 218.44 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68efe942-9410-4a12-ab4b-2091f23aae26")
+		(property "Reference" "#PWR0164"
+			(at 138.43 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 136.652 217.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 138.43 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffdf3112-2d4d-4911-b423-b9590f06a168")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -19887,7 +20236,7 @@
 				)
 			)
 		)
-		(property "Value" "33r"
+		(property "Value" "33"
 			(at 185.42 272.034 90)
 			(effects
 				(font
@@ -20925,7 +21274,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 115.2652 250.19 0)
 			(effects
 				(font
@@ -22070,6 +22419,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad_MP")
+		(at 271.78 278.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a80b1c0-0604-4254-8f6c-f0d9e0aa7083")
+		(property "Reference" "H4"
+			(at 275.59 276.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_MP"
+			(at 275.59 279.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 271.78 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 271.78 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MP"
+			(uuid "122402d9-d431-40ae-a78c-b7ad8feb06b3")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 250.19 163.83 90)
 		(unit 1)
@@ -22333,82 +22749,6 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 132.08 250.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8eedab7a-99e7-49bb-b2f6-64a6af695aa7")
-		(property "Reference" "D7"
-			(at 127.254 247.142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WHITE"
-			(at 135.89 247.142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 132.08 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 132.08 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 132.08 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fb9c551b-adb2-47d2-960e-b16636e63ca7")
-		)
-		(pin "1"
-			(uuid "33576a45-055f-47ac-ad18-6436cdffc3d8")
-		)
-		(instances
-			(project "SmartTBBatteryChargerSingleChannel"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -23187,7 +23527,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20p"
+		(property "Value" "100p"
 			(at 188.976 257.302 0)
 			(effects
 				(font
@@ -23502,74 +23842,6 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "C111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 100.33 267.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5399ad9-c72a-4bc6-a134-b43fe6b662f1")
-		(property "Reference" "R21"
-			(at 100.33 261.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2k"
-			(at 100.33 264.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 100.33 269.748 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 100.33 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "794f9a69-7e9e-4c1e-b72d-4c7c05a21781")
-		)
-		(pin "2"
-			(uuid "da737d85-c56f-453f-a612-e5c1f9370028")
-		)
-		(instances
-			(project "SmartTBBatteryChargerSingleChannel"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -24265,82 +24537,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 132.08 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aa45021d-bc13-46aa-9b2c-0bfcf0c67d4b")
-		(property "Reference" "D17"
-			(at 127.254 220.472 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WHITE"
-			(at 135.89 220.472 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 132.08 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 132.08 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 132.08 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a7f7e6e-c9cb-41fd-959a-630db55a4562")
-		)
-		(pin "1"
-			(uuid "20aa6aea-34d1-46c5-b812-34474d99db67")
-		)
-		(instances
-			(project "SmartTBBatteryCharger"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "D17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 269.24 102.87 90)
 		(unit 1)
@@ -24892,6 +25088,147 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 152.4 220.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b22e0201-9c81-492f-bd51-e4f2b686a578")
+		(property "Reference" "D33"
+			(at 152.4 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 153.67 217.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 152.4 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 152.4 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dfa450c8-c332-4eb7-bf07-50f4a180185e")
+		)
+		(pin "1"
+			(uuid "c16b678a-db6c-451c-86b0-0b7773388812")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 275.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b50f605f-56d4-453f-8a5f-4eb85faa7521")
+		(property "Reference" "#PWR0163"
+			(at 137.16 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.636 275.844 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a07b8ef-7e1a-4de3-bcbd-db91587bbce6")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
@@ -25579,6 +25916,74 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 275.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c19839f6-3795-469d-93d1-feaaaa5084d4")
+		(property "Reference" "R65"
+			(at 119.38 269.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 119.38 271.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 119.38 277.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dafba09-b878-4457-b932-3015f5f585ad")
+		)
+		(pin "2"
+			(uuid "3f47e2c1-3c14-4616-9494-1930ce21db2c")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -26947,6 +27352,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 113.03 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7b20f47-b3ab-4240-922a-1659813914d8")
+		(property "Reference" "#PWR018"
+			(at 113.03 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 113.03 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 113.03 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c72457d-088e-4284-ad5f-5f0c9ba89c21")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "0_RM2023:RS3236")
 		(at 55.88 270.51 0)
 		(unit 1)
@@ -27018,6 +27489,73 @@
 			(project "SmartTBBatteryCharger"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad_MP")
+		(at 271.78 271.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da31d907-314f-4470-b2c5-1b79a128ee8c")
+		(property "Reference" "H3"
+			(at 275.59 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_MP"
+			(at 275.59 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 271.78 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 271.78 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MP"
+			(uuid "cd6815d5-28ab-4d1c-b3b1-64d1ed0e7d98")
+		)
+		(instances
+			(project "SmartTBBatteryChargerNewTest"
+				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -27826,75 +28364,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 35.56 266.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ea3dc8a1-21a1-44b8-86f9-57e197b82c44")
-		(property "Reference" "C5"
-			(at 36.068 264.668 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 36.576 268.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 36.5252 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 35.56 266.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 35.56 266.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "759d4ae2-1020-42a5-b4d0-ba17c2489b9d")
-		)
-		(pin "2"
-			(uuid "67e13d00-bc5d-45bc-a112-9eff9eb150fd")
-		)
-		(instances
-			(project "SmartTBBatteryCharger"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:FerriteBead")
 		(at 175.26 254 90)
 		(unit 1)
@@ -27912,7 +28381,7 @@
 				)
 			)
 		)
-		(property "Value" "FerriteBead"
+		(property "Value" "220"
 			(at 175.2092 248.92 90)
 			(effects
 				(font
@@ -28705,82 +29174,6 @@
 			(project "SmartTBBatteryChargerNewTest"
 				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
 					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 100.33 275.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "faa0175e-5d1d-4da8-b163-0913bd58eeb9")
-		(property "Reference" "D8"
-			(at 95.504 272.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WHITE"
-			(at 104.14 272.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 100.33 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 100.33 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 100.33 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f7b01b07-1d9f-4b6d-bdf7-2966d4119041")
-		)
-		(pin "1"
-			(uuid "e9227292-a850-4d9b-87ec-518626a8d547")
-		)
-		(instances
-			(project "SmartTBBatteryChargerSingleChannel"
-				(path "/2e05ddd5-7934-49df-b3d1-7d213e2935b6"
-					(reference "D8")
 					(unit 1)
 				)
 			)

@@ -4337,7 +4337,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "SB2045L"
 			(at 81.28 55.5624 90)
 			(effects
 				(font
@@ -4778,7 +4778,7 @@
 				)
 			)
 		)
-		(property "Value" "1R"
+		(property "Value" "3.3"
 			(at 68.326 47.498 0)
 			(effects
 				(font
