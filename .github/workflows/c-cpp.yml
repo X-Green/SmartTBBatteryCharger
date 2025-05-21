@@ -1,0 +1,33 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: install_toolchain_make
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi make
+
+    # For STM32CubeMX generated Makefiles, a separate configure step is usually not needed.
+    # The Makefile should already be set up to use arm-none-eabi-gcc.
+    # If you have a custom ./configure script, you would uncomment and adapt it.
+    # - name: configure
+    #   run: ./configure # Or: env CC=arm-none-eabi-gcc ./configure
+
+    - name: make
+      run: make
+
+    # The following steps ('make check', 'make distcheck') are removed
+    # as per the request to compile but not run tests.
+    # These steps would likely fail anyway without an ARM emulator on the x86_64 runner.
