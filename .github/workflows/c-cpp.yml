@@ -17,7 +17,7 @@ jobs:
     - name: install&cache
       uses: awalsh128/cache-apt-pkgs-action@latest
       with:
-        packages: gcc-arm-none-eabi binutils-arm-none-eabi make
+        packages: gcc-arm-none-eabi binutils-arm-none-eabi gcc-arm-embedded make
         version: 1.0
 
     - name: make
