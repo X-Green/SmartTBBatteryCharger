@@ -13,31 +13,56 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+
+    - name: Prepare custom cache directory
+      run: mkdir -p ${{ runner.temp }}/apt_cache_custom
+
     - name: Cache APT packages
       uses: actions/cache@v4
+      id: apt-cache # Give an id to check cache-hit status
       with:
-        path: |
-          /var/cache/apt/archives
-          /var/lib/apt/lists
-        key: ${{ runner.os }}-apt-${{ hashFiles('.github/workflows/c-cpp.yml') }}
+        path: ${{ runner.temp }}/apt_cache_custom
+        key: ${{ runner.os }}-apt-toolchain-${{ hashFiles('.github/workflows/c-cpp.yml') }}
         restore-keys: |
-          ${{ runner.os }}-apt-
+          ${{ runner.os }}-apt-toolchain-
 
-    - name: Install Toolchain Make
+    - name: Restore APT data from custom cache
+      if: steps.apt-cache.outputs.cache-hit == 'true'
       run: |
-        sudo apt-get update
-        sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi make
+        echo "APT cache hit. Restoring /var/cache/apt/archives and /var/lib/apt/lists..."
+        sudo mkdir -p /var/cache/apt/archives /var/lib/apt/lists
+        sudo rsync -av --delete ${{ runner.temp }}/apt_cache_custom/archives/ /var/cache/apt/archives/
+        sudo rsync -av --delete ${{ runner.temp }}/apt_cache_custom/lists/ /var/lib/apt/lists/
+        echo "APT data restored."
+      # apt-get update will handle creating necessary lock/partial files.
 
-    # For STM32CubeMX generated Makefiles, a separate configure step is usually not needed.
-    # The Makefile should already be set up to use arm-none-eabi-gcc.
-    # If you have a custom ./configure script, you would uncomment and adapt it.
-    # - name: configure
-    #   run: ./configure # Or: env CC=arm-none-eabi-gcc ./configure
+    - name: Install ARM GCC toolchain and make
+      run: |
+        # Ensure target system directories exist, especially if cache wasn't hit or was empty
+        sudo mkdir -p /var/cache/apt/archives/partial /var/lib/apt/lists/partial
+        echo "Running apt-get update..."
+        sudo apt-get update -y
+        echo "Installing packages..."
+        sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi make
+        echo "Packages installed."
+
+    - name: Populate custom cache directory from system APT locations for saving
+      # This step runs after apt-get install and before the cache is saved by actions/cache@v4's post job action.
+      run: |
+        echo "Populating custom cache directory from system APT locations..."
+        # Ensure source system directories exist before rsync
+        sudo mkdir -p /var/cache/apt/archives /var/lib/apt/lists
+        # Ensure target custom cache subdirectories exist
+        mkdir -p ${{ runner.temp }}/apt_cache_custom/archives ${{ runner.temp }}/apt_cache_custom/lists
+
+        echo "Rsyncing /var/cache/apt/archives..."
+        sudo rsync -av --delete --exclude='lock' --exclude='partial/' /var/cache/apt/archives/ ${{ runner.temp }}/apt_cache_custom/archives/
+        echo "Rsyncing /var/lib/apt/lists..."
+        sudo rsync -av --delete --exclude='lock' --exclude='partial/' /var/lib/apt/lists/ ${{ runner.temp }}/apt_cache_custom/lists/
+        
+        echo "Changing ownership of the custom cache directory to runner user..."
+        sudo chown -R $(id -u):$(id -g) ${{ runner.temp }}/apt_cache_custom
+        echo "Custom cache directory populated and ownership set."
 
     - name: make
       run: make
-
-    # The following steps ('make check', 'make distcheck') are removed
-    # as per the request to compile but not run tests.
-    # These steps would likely fail anyway without an ARM emulator on the x86_64 runner.
