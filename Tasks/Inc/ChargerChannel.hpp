@@ -89,8 +89,8 @@ public:
         assert_param(duty <= 1.0f);
         assert_param(duty >= 0.0f);
 
-        *pRegCMPRise = (uint32_t) ((1.0f - duty) * (HRTIM_PERIOD / 2));
-        *pRegCMPFall = (uint32_t) ((1.0f + duty) * (HRTIM_PERIOD / 2));
+        *pRegCMPRise = (uint32_t)((1.0f - duty) * (HRTIM_PERIOD / 2));
+        *pRegCMPFall = (uint32_t)((1.0f + duty) * (HRTIM_PERIOD / 2));
     }
 
 
