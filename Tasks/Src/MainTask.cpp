@@ -9,7 +9,7 @@
 #include "ChargerChannel.hpp"
 #include "ChargerCommon.hpp"
 
-namespace Tasks {
+namespace MainTask {
     ChargerChannel channel2 = ChargerChannel(
             HRTIM_TIMERID_TIMER_B, HRTIM_OUTPUT_TB1 | HRTIM_OUTPUT_TB2,
             IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f),
@@ -77,15 +77,13 @@ namespace Tasks {
 
 extern "C" {
 [[noreturn]] void systemStart() {
-    Tasks::init();
-    for (;;) Tasks::loop();
+    MainTask::init();
+    for (;;) MainTask::loop();
 }
 
 void HRTIM1_Master_IRQHandler() {
     static volatile uint16_t nana = 0;
     nana++;
     __HAL_HRTIM_MASTER_CLEAR_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);
-
-    Tasks::channel2.setCurrentDataRaw(ChargerCommon::adc1Buffer[1]);
 }
 }
