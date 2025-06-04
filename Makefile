@@ -149,7 +149,8 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Include \
 -IUtils/Inc \
 -ITasks/Inc \
--ICore/Inc
+-ICore/Inc \
+-IMiddlewares/ST/ARM/DSP/Inc
 
 include SmartBattCharger.mk
 
