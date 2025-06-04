@@ -72,13 +72,17 @@ void HAL_MspInit(void)
 
   /* System interrupt init*/
 
-  /** Disable the Internal Voltage Reference buffer
+  /** Configure the internal voltage reference buffer voltage scale
   */
-  HAL_SYSCFG_DisableVREFBUF();
+  HAL_SYSCFG_VREFBUF_VoltageScalingConfig(SYSCFG_VREFBUF_VOLTAGE_SCALE2);
+
+  /** Enable the Internal Voltage Reference buffer
+  */
+  HAL_SYSCFG_EnableVREFBUF();
 
   /** Configure the internal voltage reference buffer high impedance mode
   */
-  HAL_SYSCFG_VREFBUF_HighImpedanceConfig(SYSCFG_VREFBUF_HIGH_IMPEDANCE_ENABLE);
+  HAL_SYSCFG_VREFBUF_HighImpedanceConfig(SYSCFG_VREFBUF_HIGH_IMPEDANCE_DISABLE);
 
   /** Disable the internal Pull-Up in Dead Battery pins of UCPD peripheral
   */

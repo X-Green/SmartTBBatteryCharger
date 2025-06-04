@@ -5,7 +5,6 @@
 #include "hrtim.h"
 #include "adc.h"
 #include "main.h"
-#include "opamp.h"
 #include "ChargerChannel.hpp"
 #include "ChargerCommon.hpp"
 
@@ -27,20 +26,20 @@ namespace MainTask {
     void init() {
         hhrtim1.Instance->sCommonRegs.ODISR |=
                 HRTIM_OUTPUT_TA1 | HRTIM_OUTPUT_TA2 | HRTIM_OUTPUT_TB1 | HRTIM_OUTPUT_TB2;
-        HAL_OPAMP_Start(&hopamp1);
-        HAL_OPAMP_Start(&hopamp2);
-        HAL_OPAMP_Start(&hopamp6);
+//        HAL_OPAMP_Start(&hopamp1);
+//        HAL_OPAMP_Start(&hopamp2);
+//        HAL_OPAMP_Start(&hopamp6);
         HAL_Delay(100);
         HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
         HAL_Delay(100);
         HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
         HAL_Delay(100);
-        HAL_ADCEx_Calibration_Start(&hadc4, ADC_SINGLE_ENDED);
+//        HAL_ADCEx_Calibration_Start(&hadc4, ADC_SINGLE_ENDED);
 
         HAL_ADC_Start_DMA(&hadc1, (uint32_t *) (ChargerCommon::adc1Buffer), 3);
 
         HAL_ADC_Start(&hadc2);
-        HAL_ADC_Start(&hadc4);
+//        HAL_ADC_Start(&hadc4);
 
 
         __HAL_HRTIM_MASTER_ENABLE_IT(&hhrtim1, HRTIM_MASTER_IT_MREP); // enable master repetition interrupt
@@ -68,7 +67,7 @@ namespace MainTask {
 
     void loop() {
         adc2Value = HAL_ADC_GetValue(&hadc2);
-        adc4Value = HAL_ADC_GetValue(&hadc4);
+//        adc4Value = HAL_ADC_GetValue(&hadc4);
         ChargerCommon::voltageInput = (float) adc4Value * gain_VIN - bias_VIN;
         channel2.setVoltageDataRaw(adc2Value);
         channel2.channelSetPWM(ChargerCommon::testDuty);
@@ -82,8 +81,6 @@ extern "C" {
 }
 
 void HRTIM1_Master_IRQHandler() {
-    static volatile uint16_t nana = 0;
-    nana++;
     __HAL_HRTIM_MASTER_CLEAR_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);
 }
 }
