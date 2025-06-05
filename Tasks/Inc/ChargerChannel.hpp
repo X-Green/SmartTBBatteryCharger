@@ -4,16 +4,14 @@
 
 #pragma once
 
-#include "main.h"
-#include "hrtim.h"
 #include "IncrementalPID.hpp"
+#include "hrtim.h"
+#include "main.h"
 
-class ChargerChannel {
-
-
-public:
-
-    static const uint32_t HRTIM_PERIOD = 27200;
+class ChargerChannel
+{
+   public:
+    const uint32_t HRTIM_PERIOD = 53760;
 
     const uint32_t HRTIM_TIMERID;
     const uint32_t HRTIM_OUTPUT_CHANNEL_IDENTIFIER;
@@ -21,25 +19,19 @@ public:
     volatile uint32_t *pRegCMPRise;
     volatile uint32_t *pRegCMPFall;
 
-    float GAIN_VOLTAGE_OUT;
-    float BIAS_VOLTAGE_OUT;
+    float *const pVoltageOut;
+    float *const pCurrentOut;
 
-    float GAIN_CURRENT_OUT;
-    float BIAS_CURRENT_OUT;
-
-    float voltageOut = 0.0f;
-    float currentOut = 0.0f;
-
-    bool errorOCFlag = false;
-    bool errorShortFlag = false;
-    bool errorOVFlag = false;
+    bool errorOCFlag     = false;
+    bool errorShortFlag  = false;
+    bool errorOVFlag     = false;
     bool errorSupplyFlag = false;
 
     float targetCurrent = 0.0f;
-    float tempDuty = 0.0f;
+    float tempDuty      = 0.0f;
 
-
-    enum ChannelState {
+    enum ChannelState
+    {
         IDLE,
         CHARGING,
         ERROR_STATE
@@ -55,43 +47,39 @@ public:
 
     void updateChannelError();
 
+    ChargerChannel(uint32_t hrtimTimerid,
+                   uint32_t hrtimOutputChannelIdentifier,
+                   IncrementalPID pidCurrent,
+                   float *pVoltageData,
+                   float *pCurrentData)
 
-    ChargerChannel(
-            uint32_t hrtimTimerid, uint32_t hrtimOutputChannelIdentifier, IncrementalPID pidCurrent,
-            float gainVoltageOut, float biasVoltageOut, float gainCurrentOut, float biasCurrentOut
-    ) :
-            HRTIM_TIMERID(hrtimTimerid), HRTIM_OUTPUT_CHANNEL_IDENTIFIER(hrtimOutputChannelIdentifier),
-            pRegCMPRise(nullptr), pRegCMPFall(nullptr),
-            GAIN_VOLTAGE_OUT(gainVoltageOut), BIAS_VOLTAGE_OUT(biasVoltageOut),
-            GAIN_CURRENT_OUT(gainCurrentOut), BIAS_CURRENT_OUT(biasCurrentOut),
-            pidCurrent(pidCurrent) {}
+        : HRTIM_TIMERID(hrtimTimerid),
+          HRTIM_OUTPUT_CHANNEL_IDENTIFIER(hrtimOutputChannelIdentifier),
+          pRegCMPRise(nullptr),
+          pRegCMPFall(nullptr),
+          pVoltageOut(pVoltageData),
+          pCurrentOut(pCurrentData),
+          pidCurrent(pidCurrent)
+    {
+    }
 
     void initChannel(volatile uint32_t *regCmpRise, volatile uint32_t *regCmpFall);
-
-
-    void setVoltageDataRaw(uint16_t rawData) {
-        this->voltageOut = this->GAIN_VOLTAGE_OUT * (float) rawData + this->BIAS_VOLTAGE_OUT;
-    }
-
-    void setCurrentDataRaw(uint16_t rawData) {
-        this->currentOut = this->GAIN_CURRENT_OUT * (float) rawData + this->BIAS_CURRENT_OUT;
-    }
 
     void channelEnableOutput() const { hhrtim1.Instance->sCommonRegs.OENR |= this->HRTIM_OUTPUT_CHANNEL_IDENTIFIER; }
 
     void channelDisableOutput() const { hhrtim1.Instance->sCommonRegs.ODISR |= this->HRTIM_OUTPUT_CHANNEL_IDENTIFIER; }
 
-    bool channelGetOutputEnabled() const {
+    bool channelGetOutputEnabled() const
+    {
         return (hhrtim1.Instance->sCommonRegs.OENR & this->HRTIM_OUTPUT_CHANNEL_IDENTIFIER) != 0;
     }
 
-    void channelSetPWM(float duty) {
+    void channelSetPWM(float duty)
+    {
         assert_param(duty <= 1.0f);
         assert_param(duty >= 0.0f);
 
         *pRegCMPRise = (uint32_t)((1.0f - duty) * (HRTIM_PERIOD / 2));
         *pRegCMPFall = (uint32_t)((1.0f + duty) * (HRTIM_PERIOD / 2));
     }
-
-
 };
