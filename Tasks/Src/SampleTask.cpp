@@ -3,6 +3,7 @@
 //
 #include "SampleTask.hpp"
 
+#include "MathUtil.hpp"
 #include "adc.h"
 
 namespace Tasks::SampleTask
@@ -24,7 +25,8 @@ void updateSampleDataFromBuffer()
     for (int i = 0; i < 7; ++i)
     {
         float tmpVoltageData = ((float)adc1Buffer[i]) * VOLTAGE_GAIN + VOLTAGE_BIAS;
-        voltageOut[i]       = voltageOut[i] * VOLTAGE_LPF_ALPHA + tmpVoltageData * (1.0f - VOLTAGE_LPF_ALPHA);
+        voltageOut[i]        = voltageOut[i] * VOLTAGE_LPF_ALPHA + tmpVoltageData * (1.0f - VOLTAGE_LPF_ALPHA);
+        voltageOut[i]        = M_MAX(voltageOut[i], 0.1f);
     }
     voltageIn = voltageOut[6];
 
@@ -33,6 +35,7 @@ void updateSampleDataFromBuffer()
     {
         float tmpCurrentData = (float)adc2Buffer[i] * CURRENT_GAIN + CURRENT_BIAS;
         currentData[i]       = currentData[i] * CURRENT_LPF_ALPHA + tmpCurrentData * (1.0f - CURRENT_LPF_ALPHA);
+        currentData[i]       = M_MAX(currentData[i], 0.02f);
     }
 }
 }  // namespace Tasks::SampleTask
