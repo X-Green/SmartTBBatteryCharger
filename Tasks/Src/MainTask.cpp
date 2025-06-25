@@ -17,12 +17,14 @@ namespace MainTask
 //    );
 ChargerChannel chargerChannels[] = {ChargerChannel(HRTIM_TIMERID_TIMER_A,
                                                    HRTIM_OUTPUT_TA1,
-                                                   IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f),
+                                                   IncrementalPID(0.0f, 0.000f, 0.004f, 0.0f),
+                                                   IncrementalPID(1.0f, 1.001f, 0.05f, 0.1f),
                                                    &Tasks::SampleTask::voltageOut[0],
                                                    &Tasks::SampleTask::currentData[0]),
                                     ChargerChannel(HRTIM_TIMERID_TIMER_A,
                                                    HRTIM_OUTPUT_TA2,
-                                                   IncrementalPID(0.0f, 0.001f, 0.0005f, 0.0f),
+                                                   IncrementalPID(0.0f, 0.001f, 0.004f, 0.0f),
+                                                   IncrementalPID(0.0f, 0.001f, 0.0f, 0.0f),
                                                    &Tasks::SampleTask::voltageOut[1],
                                                    &Tasks::SampleTask::currentData[1])};
 
@@ -55,7 +57,10 @@ void init()
     chargerChannels[0].channelEnableOutput();
 }
 
-void loop() { chargerChannels[0].channelSetPWM(chargerChannels[0].tempDuty); }
+void loop()
+{
+    //    chargerChannels[0].channelSetPWM(chargerChannels[0].tempDuty);
+}
 }  // namespace MainTask
 
 extern "C"
@@ -69,7 +74,8 @@ extern "C"
 
     void HRTIM1_Master_IRQHandler()
     {
-        Tasks::SampleTask::updateSampleDataFromBuffer();
         __HAL_HRTIM_MASTER_CLEAR_IT(&hhrtim1, HRTIM_MASTER_IT_MREP);
+        Tasks::SampleTask::updateSampleDataFromBuffer();
+        MainTask::chargerChannels[0].updateChannelDCDC();
     }
 }

@@ -20,21 +20,45 @@ void ChargerChannel::updateChannelDCDC()
     if (this->state == IDLE)
     {
         tempDuty = *(this->pVoltageOut) / Tasks::SampleTask::voltageIn;
-        tempDuty = M_CLAMP(tempDuty, 0.5f, 1.0f);
+        tempDuty = M_CLAMP(tempDuty, 0.2f, 0.87f);
         this->channelSetPWM(0.1f);
         this->pidCurrent.update(0, *this->pCurrentOut);
+        this->pidVoltage.update(this->targetVoltage, *this->pVoltageOut);
     }
     else if (this->state == CHARGING)
     {
         this->pidCurrent.update(this->targetCurrent, *this->pCurrentOut);
-        tempDuty += this->pidCurrent.getDeltaOutput();
-        tempDuty = M_CLAMP(tempDuty, 0.5f, 0.9f);
+        this->pidVoltage.update(this->targetVoltage, *this->pVoltageOut);
+        // choose the smaller delta_output to avoid overvoltage or overcurrent
+        float vOutDuty = tempDuty + this->pidVoltage.getDeltaOutput() / Tasks::SampleTask::voltageIn;
+        float iOutDuty = tempDuty + this->pidCurrent.getDeltaOutput();
+
+        if ((*this->pVoltageOut > 0.8f * this->targetVoltage) && (vOutDuty < iOutDuty))
+        {
+            tempDuty = vOutDuty;
+        }
+        else
+        {
+            tempDuty = iOutDuty;
+        }
+        //        if (*this->pCurrentOut < 0.3f)
+        //        {
+        //            tempDuty = M_CLAMP(tempDuty, 0.2f, 0.87f);
+        //        }
+        //        else
+        //        {
+        tempDuty = M_CLAMP(tempDuty, 0.2f, 0.97f);
+        //        }
         this->channelSetPWM(tempDuty);
     }
     else
     {
         this->channelDisableOutput();
+        this->pidCurrent.updateDataNoOutput(0, *this->pCurrentOut);
+        this->pidVoltage.updateDataNoOutput(this->targetVoltage, *this->pVoltageOut);
     }
+    //    this->pidCurrent.update(this->targetCurrent, *this->pCurrentOut);
+    //    tempDuty = M_CLAMP(tempDuty, 0.5f, 0.9f);
 }
 
 void ChargerChannel::updateChannelError() {}

@@ -28,6 +28,7 @@ class ChargerChannel
     bool errorSupplyFlag = false;
 
     float targetCurrent = 0.0f;
+    float targetVoltage = 26.1f;
     float tempDuty      = 0.0f;
 
     enum ChannelState
@@ -41,6 +42,8 @@ class ChargerChannel
 
     IncrementalPID pidCurrent;
 
+    IncrementalPID pidVoltage;
+
     void updateChannelStatus();
 
     void updateChannelDCDC();
@@ -50,6 +53,7 @@ class ChargerChannel
     ChargerChannel(uint32_t hrtimTimerid,
                    uint32_t hrtimOutputChannelIdentifier,
                    IncrementalPID pidCurrent,
+                   IncrementalPID pidVoltage,
                    float *pVoltageData,
                    float *pCurrentData)
 
@@ -59,7 +63,8 @@ class ChargerChannel
           pRegCMPFall(nullptr),
           pVoltageOut(pVoltageData),
           pCurrentOut(pCurrentData),
-          pidCurrent(pidCurrent)
+          pidCurrent(pidCurrent),
+          pidVoltage(pidVoltage)
     {
     }
 
